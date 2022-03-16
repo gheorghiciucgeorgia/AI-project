@@ -1,0 +1,77 @@
+$main-color:#EEEDDE;
+$second-color:#E0DDAA;
+$third-color:#203239;
+$fourth-color:#141E27;
+body {
+	background:$main-color;
+	font-family: 'Fredoka', sans-serif;
+	font-size: 14px;
+}
+.navigation-menu{
+    color: white;
+    float: left;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    background: transparent;
+}
+
+nav {
+        ul{
+	        text-align: center;
+	        list-style-type: none;
+  	        margin: 0;
+  	        padding: 0;
+            
+            li{
+                position: relative;
+  	            width: 70px;
+  	            cursor: pointer;
+	            background: $fourth-color;
+	            text-transform: uppercase;
+	            transition:all .4s ease-out;
+                div{
+                    position: relative; 
+                }
+            }
+            li:after {
+                position: absolute;
+                background: white;
+                color: $fourth-color;
+                top:0;
+                left: 70px;
+                width: 70px; height: 100%;
+                  opacity:.5;
+                  transform: perspective(400px) rotateY(90deg);
+                transform-origin: 0 100%;
+                transition:all .4s ease-out;
+            }
+            li:nth-child(1):after { 
+                content: "Home";
+                line-height: 88px;
+            }
+            li:nth-child(2):after { 
+                content: "About";
+                line-height: 88px;
+            }
+            li:nth-child(3):after { 
+                content: "Contact";
+                line-height: 70px;
+            }
+            li:hover {
+                transform: translateX(-70px);
+            }
+            li:hover:after {
+                opacity: 1;
+                transform: perspective(400px) rotateY(0deg) scale(1) ;
+            }
+            li > div {
+                display: inline-block;
+                padding: 25px 0;
+                background: transparent;
+            }
+        }
+        i{
+            font-size: 20pt;
+        }
+}
