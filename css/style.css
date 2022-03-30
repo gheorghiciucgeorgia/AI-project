@@ -31,7 +31,7 @@ nav ul li {
 nav ul li div {
   position: relative;
 }
-nav ul li:after {
+nav li:after {
   position: absolute;
   background: white;
   color: #141E27;
@@ -44,32 +44,46 @@ nav ul li:after {
   transform-origin: 0 100%;
   transition: all 0.4s ease-out;
 }
-nav ul li:nth-child(1):after {
+nav li:nth-child(1):after {
   content: "Home";
   line-height: 88px;
+  font-size: 12pt;
 }
-nav ul li:nth-child(2):after {
+nav li:nth-child(2):after {
   content: "About";
   line-height: 88px;
+  font-size: 12pt;
 }
-nav ul li:nth-child(3):after {
+nav li:nth-child(3):after {
   content: "Contact";
   line-height: 70px;
+  font-size: 10pt;
 }
-nav ul li:hover {
+nav li:nth-child(4):after {
+  content: "Gallery";
+  line-height: 70px;
+  font-size: 10pt;
+}
+nav li:hover {
   transform: translateX(-70px);
 }
-nav ul li:hover:after {
+nav li:hover:after {
   opacity: 1;
   transform: perspective(400px) rotateY(0deg) scale(1);
 }
-nav ul li > div {
+nav li > div {
   display: inline-block;
   padding: 25px 0;
   background: transparent;
 }
 nav i {
   font-size: 20pt;
+}
+
+.page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*---------Styling carousel banner---*/
@@ -225,6 +239,7 @@ nav i {
 }
 .about-section {
   margin: 5% 20%;
+  margin-bottom: -5%;
 }
 .about-section h1 {
   text-align: center;
@@ -248,12 +263,34 @@ nav i {
   border: 2px solid #203239;
   color: white;
   background-color: #203239;
-  margin: -127px -8px;
   text-align: center;
+  margin: 0px -8px;
+  margin-bottom: 2%;
+  padding-bottom: 4%;
 }
 .our-instruments p {
   font-weight: 300;
   font-size: 12pt;
+  margin-bottom: 2%;
+}
+.our-instruments .multiple-items {
+  margin-left: 8%;
+  display: flex;
+}
+.our-instruments .slick-arrow {
+  border: none;
+  box-sizing: none;
+  background-color: transparent;
+  color: white;
+  font-size: 17pt;
+  margin-right: 3.5%;
+}
+
+.footer {
+  border: 2px solid #203239;
+  color: white;
+  background-color: #203239;
+  margin: 0px -8px;
 }
 
 /*# sourceMappingURL=style.css.map */

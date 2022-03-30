@@ -26,17 +26,17 @@ nav {
 	        list-style-type: none;
   	        margin: 0;
   	        padding: 0;
-            
-            li{
+              li{
                 position: relative;
   	            width: 70px;
   	            cursor: pointer;
-	            background: $fourth-color;
-	            text-transform: uppercase;
-	            transition:all .4s ease-out;
-                div{
-                    position: relative; 
-                }
+	              background: $fourth-color;
+	              text-transform: uppercase;
+	              transition:all .4s ease-out;
+                  div{
+                      position: relative; 
+                  }
+              }
             }
             li:after {
                 position: absolute;
@@ -45,22 +45,30 @@ nav {
                 top:0;
                 left: 70px;
                 width: 70px; height: 100%;
-                  opacity:.5;
-                  transform: perspective(400px) rotateY(90deg);
+                opacity:.5;
+                transform: perspective(400px) rotateY(90deg);
                 transform-origin: 0 100%;
                 transition:all .4s ease-out;
             }
             li:nth-child(1):after { 
                 content: "Home";
                 line-height: 88px;
+                font-size:12pt;
             }
             li:nth-child(2):after { 
                 content: "About";
                 line-height: 88px;
+                font-size:12pt;
             }
             li:nth-child(3):after { 
                 content: "Contact";
                 line-height: 70px;
+                font-size:10pt;
+            }
+            li:nth-child(4):after { 
+              content: "Gallery";
+              line-height: 70px;
+              font-size:10pt;
             }
             li:hover {
                 transform: translateX(-70px);
@@ -74,10 +82,14 @@ nav {
                 padding: 25px 0;
                 background: transparent;
             }
-        }
         i{
             font-size: 20pt;
         }
+}
+.page-content{
+  width:100%;
+  display: flex;
+  flex-direction: column;
 }
 /*---------Styling carousel banner---*/
 .slideshow-container {
@@ -228,6 +240,7 @@ nav {
 //----------------------ABOUT-US SECTION-----------------
 .about-section{
   margin:5% 20%;
+  margin-bottom: -5%;
   h1{
     text-align: center;
     font-size:40pt;
@@ -250,10 +263,31 @@ nav {
   border:2px solid $third-color;
   color:$white;
   background-color: $third-color;
-  margin: -127px -8px;
   text-align:center;
+  margin:0px -8px;  
+  margin-bottom: 2%;
+  padding-bottom: 4%;
   p{
     font-weight:300;
     font-size:12pt;
+    margin-bottom:2%;
   }
+  .multiple-items{
+    margin-left: 8%;
+    display:flex;
+  }
+  .slick-arrow{
+    border:none;
+    box-sizing:none;
+    background-color: transparent;
+    color:white;
+    font-size: 17pt;
+    margin-right: 3.5%;
+  }
+}
+.footer{
+  border:2px solid $third-color;
+  color:$white;
+  background-color: $third-color;
+  margin: 0px -8px;
 }

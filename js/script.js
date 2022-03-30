@@ -49,3 +49,14 @@ dot4.onclick=function(){
 dot5.onclick=function(){
   currentSlide(5);
 }
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+$('.slick-prev').each(function() {
+     $(this).html('<i class="fa-solid fa-circle-arrow-left"></i>');
+});
+$('.slick-next').each(function() {
+  $(this).html('<i class="fa-solid fa-circle-arrow-right"></i>');
+});
