@@ -286,11 +286,170 @@ nav i {
   margin-right: 3.5%;
 }
 
+.upcoming-artists {
+  border: 2px solid #EEEDDE;
+  color: black;
+  background-color: #EEEDDE;
+  text-align: center;
+  margin: 0px -8px;
+  margin-bottom: 2%;
+  padding-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.upcoming-artists p {
+  font-weight: 300;
+  font-size: 12pt;
+}
+.upcoming-artists h1 {
+  font-size: 3em;
+}
+.upcoming-artists .artists {
+  border: 2px solid #E0DDAA;
+  background-color: #E0DDAA;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  border-radius: 20px;
+}
+.upcoming-artists .artists .row {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  width: 100%;
+  justify-content: space-between;
+}
+.upcoming-artists .artists .row .numbers {
+  font-weight: 700;
+  margin-left: 14%;
+}
+.upcoming-artists .artists .row .name {
+  font-weight: 700;
+}
+.upcoming-artists .artists .row button {
+  border: 2px solid #203239;
+  border-radius: 25px;
+  background-color: #203239;
+  padding: 10px 35px;
+  margin: 9px;
+  margin-right: 40px;
+}
+.upcoming-artists .artists .row button a {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+.upcoming-artists .artists .row button:hover {
+  background-color: white;
+  color: black;
+}
+.upcoming-artists .artists .row button:hover a {
+  color: black;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
+.image-section .row {
+  display: flex;
+  width: 100%;
+  margin: 10px 12px;
+}
+.image-section .row img {
+  width: 40%;
+}
+.image-section .row iframe {
+  width: 60%;
+  margin-right: 10%;
+}
+.image-section .row .text {
+  margin-right: 10%;
+}
+.image-section .row .text p {
+  font-weight: 100;
+}
+.image-section .row .text button {
+  border: 2px solid #141E27;
+  background-color: #141E27;
+  border-radius: 25px;
+  padding: 10px 25px;
+  box-shadow: 5px 5px 5px #203239;
+}
+.image-section .row .text button a {
+  text-decoration: none;
+  color: white;
+}
+.image-section .row .text1 {
+  margin-right: 0;
+}
+.image-section .row .text1 p {
+  font-weight: 100;
+}
+.image-section .row .text2 {
+  margin-left: 10%;
+}
+.image-section .row .text2 p {
+  font-weight: 100;
+}
+
 .footer {
   border: 2px solid #203239;
   color: white;
   background-color: #203239;
   margin: 0px -8px;
+  margin-bottom: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .title {
+  text-align: center;
+}
+.footer .title p {
+  font-weight: 200;
+}
+.footer .title h1 {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 40pt;
+}
+.footer .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer .images img {
+  width: 15%;
+  margin: 2% 0.5%;
+}
+.footer .social-media {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.footer .social-media .copyright p {
+  font-weight: 200;
+}
+.footer .social-media .social-icons {
+  width: 20%;
+}
+.footer .social-media .social-icons a {
+  text-decoration: none;
+  color: white;
+  margin-left: 11%;
 }
 
 /*# sourceMappingURL=style.css.map */
