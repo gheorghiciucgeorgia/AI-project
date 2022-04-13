@@ -4,6 +4,7 @@ $third-color:#203239;
 $fourth-color:#141E27;
 $white:white;
 $black:black;
+$green:rgb(132, 188, 34);
 
 body {
 	background:$main-color;
@@ -23,6 +24,7 @@ body {
   justify-content: space-between;
   .logo{
     width:20%;
+    padding-top: 1%;
     img{
       width:20%;
       margin: 2px 15px;
@@ -30,32 +32,261 @@ body {
   }
   .menu{
     margin:20px;
-    button{
-      border:none;
-      background-color: transparent;
-      font-size:12pt;
-      font-weight: 700;
-      color:#203239;
+    span{
+      position: relative;
+      display: inline-flex;
+      height: 51px;
+      width: 141px;
+      margin: 0 15px;
+      perspective: 1000px;
       a{
-        text-decoration: none;
-        color:#203239;
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform .25s;
       }
+    }
+    .btn1 a:before,
+    .btn1 a:after{
+      position: absolute;
+      content: "PRODUCTS";
+      height: 51px;
+      width: 141px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid $third-color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 12pt;
+    }
+    .btn2 a:before,
+    .btn2 a:after{
+      position: absolute;
+      content: "ABOUT US";
+      height: 51px;
+      width: 141px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid $third-color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      
+    font-size: 12pt;
+
+    }
+    .btn3 a:before,
+    .btn3 a:after{
+      position: absolute;
+      content: "CONTACT US";
+      height: 51px;
+      width: 141px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid $third-color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      
+    font-size: 12pt;
+
+    }
+    span a:before{
+      color: #fff;
+      background: $third-color;
+      transform: rotateY(0deg) translateZ(25px);
+    }
+    span a:after{
+      color: $third-color;
+      transform: rotateX(90deg) translateZ(25px);
+    }
+    span a:hover{
+      transform: translateZ(-25px) rotateX(-90deg);
     }
   }
   .icons{
     width:30%;
-    margin:20px 0px;  
+    margin:20px -50px;  
     text-align: center;
+    padding-top: 1%;
     a{
       text-decoration:none;
       margin:5px;
-      margin-right:30px;
+      margin-right:10px;
       margin-left:20px;
       color:$third-color;
+      position: relative;
+      .ellipse{
+        border:2.5px solid $third-color;
+        border-radius: 50%;
+        top:-10px;
+        right:-14px;
+        position: absolute;
+        display: inline;
+        font-size:12px;
+        color:$third-color;
+        padding:0px 4px;
+        font-weight: 700;
+      }
     }
   }
 }
+ /*--------------Modal form Log In----------*/
 
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: $black;
+    z-index:13;
+  }
+  
+    /* Modal Content/Box */
+  
+  .modal-content {
+    background-color:$white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 30%; /* Could be more or less, depending on screen size */
+    border-radius: 6px;
+    padding:10px 0px;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    
+    h1{
+      color:grey;
+      font-weight:900;
+      font-size:40px;
+    }
+  }
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: -80%;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    opacity:0.5;
+    cursor: pointer;
+  }
+  
+  .container {
+    padding: 60px;
+  }
+  
+  /* The fields of the email and lato */
+  
+  input[type=email], input[type=password],input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid $black;
+    box-sizing: border-box;
+    border-radius: 25px;
+    outline:none;
+    font-weight:400;
+    margin-bottom:40px;
+    background-color: transparent;
+    z-index:1;
+  }
+  #password{
+    position: relative;
+  }
+  /* the styling of the forgot password */
+  span.psw {
+    float: right;
+    a{
+      text-decoration: none;
+      color:$green;
+      font-weight:700;
+    }
+  }
+  .input-container{
+    position: relative;
+      .fa-eye{
+        float:right;
+        opacity:0.7;
+        font-size:20px;
+        position: absolute;
+        top:20px;
+        right:20px;
+        z-index:2;
+        cursor: pointer;
+      }
+  }
+  
+  /* Set a style for all buttons */
+  .loginbtn {
+    background-color: $green;
+    color:$white;
+    padding: 14px 100px;
+    margin: 8px 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $green;
+    cursor: pointer;
+    border-radius:25px;
+    text-transform: uppercase;
+    font-size:18px;
+    text-align: center;
+  
+    /*we put the button in the center of the modal container */
+    display:grid;
+    margin:auto;
+  }
+  
+  .loginbtn:hover {
+    opacity: 0.8;
+  }
+  
+  .idonthave{
+    text-align: center;
+    display:grid;
+    margin:auto;
+    font-size:20px;
+    line-height: 3.583;
+    color:$green;
+    
+    a{
+      text-decoration: none;
+      color:$green;
+    }
+    a:hover{
+      opacity:0.7;
+    }
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
 .page-content{
   width:100%;
   display: flex;
@@ -237,13 +468,17 @@ body {
   margin:0px -8px;  
   margin-bottom: 2%;
   padding-bottom: 4%;
+  a{
+    text-decoration: none;
+    color:black;
+  }
   p{
     font-weight:300;
     font-size:12pt;
     margin-bottom:2%;
   }
   .multiple-items{
-    margin-left: 8%;
+    margin-left: 2%;
     display:flex;
   }
   .slick-arrow{
@@ -254,6 +489,52 @@ body {
     font-size: 17pt;
     margin-right: 3.5%;
   }
+  .slick-slide{
+    img{
+      display: inline;
+    border: 2px solid white;
+    border-bottom: 99px solid white;
+    position: relative;
+    }
+    .trump{
+      border: 2px solid white;
+    border-bottom: 128px solid white;
+    }
+    .text{
+      position: absolute;
+      bottom: 41px;
+      margin-left: 1.9%;
+      p{
+        font-size:10pt;
+      }
+    }
+    .drums{
+      margin-left:2.3%;
+    }
+    .trumpet{
+      margin-left:2%;
+    }
+    .buttons{
+      position: absolute;
+      bottom: 7px;
+      margin-left: 1.4%;
+      button{
+        border:none;
+        background-color: transparent;
+        font-size: 20pt;
+        margin-left: 27px;
+        cursor:pointer;
+      }
+      .Plus-button:hover{
+        color:$green;
+      }
+      .Heart-button:hover{
+        color:red;
+      }
+      
+    }
+  }
+ 
 }
 .upcoming-artists{
   border:2px solid $main-color;
@@ -380,6 +661,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom:20px;
   .title{
     text-align: center;
     p{
@@ -408,8 +690,68 @@ body {
     text-align: center;
     align-items: center;
     .copyright{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
       p{
         font-weight:200;
+      }
+      a{
+        text-decoration: none;
+        color:inherit;
+        font-weight: 200;
+      }
+    }
+    .forms{
+      #email-input{
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+
+        input[type=email]{
+          border-radius: 35px;
+          border: 0.15rem solid grey;
+          padding: 0.7142857143rem 1.4285714286rem;
+          width: 100%;
+          color: grey;
+          font-size: 1rem;
+          transition: all 0.5s ease;
+        }
+        input[type=submit]{
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+        }
+        label{
+          i{
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            right: 2rem;
+            color: $second-color;
+            width: 5%;
+            height: 38%;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-size: 25px;
+          }
+          i:hover{
+            color:$green;
+          }
+        }
+      }
+      .pages{
+        display: flex;
+        flex-direction: column;
+        a{
+          text-decoration: none;
+          color:white;
+          opacity: 0.5;
+        }
+        a:hover{
+          opacity: 1;
+        }
       }
     }
     .social-icons{
@@ -418,6 +760,65 @@ body {
         text-decoration: none;
         color:$white;
         margin-left:11%;
+      }
+    }
+  }
+}
+/*-------------------------------PRODUCTS PAGE--------------*/
+.productpagecontent{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title{
+    margin-top:7%;
+    text-align: center;
+    font-size:12pt;
+  }
+  .filters{
+    border:2px solid white;
+    background-color: white;
+    width:80%;
+    .filters-title{
+      text-align:center;
+      font-weight: 600;
+    }
+    .column1, .column2{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom:20px;
+      div{
+        margin-right: 15%;
+        margin-left: 20px;
+        select{
+          border:2px solid grey;
+          border-radius:25px;
+          padding:2%;
+          padding-right:20%;
+          outline:none;
+        }
+      }
+    }
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    .products-title{
+      text-align: center;
+    }
+    .row{
+      display: flex;
+      .img{
+        .product-image{
+        width:50%;
+        }
+        h1{
+          font-size:10pt;
+        }
+        p{
+          font-size:10pt;
+        }
       }
     }
   }
