@@ -7,39 +7,44 @@ $black:black;
 $green:rgb(132, 188, 34);
 
 body {
-	background:$main-color;
-	font-family: 'Fredoka', sans-serif;
-	font-size: 14pt;
+  background: $main-color;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 14pt;
   font-weight: 400;
 }
 
-.navigation-menu{
-  border:2px solid transparent;
-  display:flex;
-  width:101%;
-  background-color: $second-color;
+.navigation-menu {
+  border: 2px solid transparent;
+  display: flex;
+  width: 101%;
+  background-color: $white;
   margin: -10px 0px 0px -10px;
   position: fixed;
-  z-index:100;
+  z-index: 100;
   justify-content: space-between;
-  .logo{
-    width:20%;
+
+  .logo {
+    width: 20%;
     padding-top: 1%;
-    img{
-      width:20%;
+
+    img {
+      width: 20%;
       margin: 2px 15px;
     }
   }
-  .menu{
-    margin:20px;
-    span{
+
+  .menu {
+    margin: 20px;
+
+    span {
       position: relative;
       display: inline-flex;
       height: 51px;
       width: 141px;
       margin: 0 15px;
       perspective: 1000px;
-      a{
+
+      a {
         font-size: 19px;
         letter-spacing: 1px;
         transform-style: preserve-3d;
@@ -47,8 +52,9 @@ body {
         transition: transform .25s;
       }
     }
+
     .btn1 a:before,
-    .btn1 a:after{
+    .btn1 a:after {
       position: absolute;
       content: "PRODUCTS";
       height: 51px;
@@ -61,8 +67,9 @@ body {
       border-radius: 5px;
       font-size: 12pt;
     }
+
     .btn2 a:before,
-    .btn2 a:after{
+    .btn2 a:after {
       position: absolute;
       content: "ABOUT US";
       height: 51px;
@@ -73,12 +80,13 @@ body {
       border: 5px solid $third-color;
       box-sizing: border-box;
       border-radius: 5px;
-      
-    font-size: 12pt;
+
+      font-size: 12pt;
 
     }
+
     .btn3 a:before,
-    .btn3 a:after{
+    .btn3 a:after {
       position: absolute;
       content: "CONTACT US";
       height: 51px;
@@ -89,318 +97,369 @@ body {
       border: 5px solid $third-color;
       box-sizing: border-box;
       border-radius: 5px;
-      
-    font-size: 12pt;
+
+      font-size: 12pt;
 
     }
-    span a:before{
+
+    span a:before {
       color: #fff;
       background: $third-color;
       transform: rotateY(0deg) translateZ(25px);
     }
-    span a:after{
+
+    span a:after {
       color: $third-color;
       transform: rotateX(90deg) translateZ(25px);
     }
-    span a:hover{
+
+    span a:hover {
       transform: translateZ(-25px) rotateX(-90deg);
     }
   }
-  .icons{
-    width:30%;
-    margin:20px -50px;  
+
+  .icons {
+    width: 30%;
+    margin: 20px -50px;
     text-align: center;
     padding-top: 1%;
-    a{
-      text-decoration:none;
-      margin:5px;
-      margin-right:10px;
-      margin-left:20px;
-      color:$third-color;
+
+    a {
+      text-decoration: none;
+      margin: 5px;
+      margin-right: 10px;
+      margin-left: 20px;
+      color: $third-color;
       position: relative;
-      .ellipse{
-        border:2.5px solid $third-color;
+
+      .ellipse {
+        border: 2.5px solid $third-color;
         border-radius: 50%;
-        top:-10px;
-        right:-14px;
+        top: -10px;
+        right: -14px;
         position: absolute;
         display: inline;
-        font-size:12px;
-        color:$third-color;
-        padding:0px 4px;
+        font-size: 12px;
+        color: $third-color;
+        padding: 0px 4px;
         font-weight: 700;
       }
     }
   }
 }
- /*--------------Modal form Log In----------*/
 
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: $black;
-    z-index:13;
+/*--------------Modal form Log In----------*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: $black;
+  z-index: 13;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: $white;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 6px;
+  padding: 10px 0px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+
+  h1 {
+    color: grey;
+    font-weight: 900;
+    font-size: 40px;
   }
-  
-    /* Modal Content/Box */
-  
-  .modal-content {
-    background-color:$white;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    width: 30%; /* Could be more or less, depending on screen size */
-    border-radius: 6px;
-    padding:10px 0px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: -80%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container {
+  padding: 60px;
+}
+
+/* The fields of the email and lato */
+
+input[type=email],
+input[type=password],
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid $black;
+  box-sizing: border-box;
+  border-radius: 25px;
+  outline: none;
+  font-weight: 400;
+  margin-bottom: 40px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+#password {
+  position: relative;
+}
+
+/* the styling of the forgot password */
+span.psw {
+  float: right;
+
+  a {
+    text-decoration: none;
+    color: $green;
+    font-weight: 700;
   }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-    
-    h1{
-      color:grey;
-      font-weight:900;
-      font-size:40px;
-    }
-  }
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: -80%;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    opacity:0.5;
-    cursor: pointer;
-  }
-  
-  .container {
-    padding: 60px;
-  }
-  
-  /* The fields of the email and lato */
-  
-  input[type=email], input[type=password],input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid $black;
-    box-sizing: border-box;
-    border-radius: 25px;
-    outline:none;
-    font-weight:400;
-    margin-bottom:40px;
-    background-color: transparent;
-    z-index:1;
-  }
-  #password{
-    position: relative;
-  }
-  /* the styling of the forgot password */
-  span.psw {
+}
+
+.input-container {
+  position: relative;
+
+  .fa-eye {
     float: right;
-    a{
-      text-decoration: none;
-      color:$green;
-      font-weight:700;
-    }
-  }
-  .input-container{
-    position: relative;
-      .fa-eye{
-        float:right;
-        opacity:0.7;
-        font-size:20px;
-        position: absolute;
-        top:20px;
-        right:20px;
-        z-index:2;
-        cursor: pointer;
-      }
-  }
-  
-  /* Set a style for all buttons */
-  .loginbtn {
-    background-color: $green;
-    color:$white;
-    padding: 14px 100px;
-    margin: 8px 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: $green;
+    opacity: 0.7;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
     cursor: pointer;
-    border-radius:25px;
-    text-transform: uppercase;
-    font-size:18px;
-    text-align: center;
-  
-    /*we put the button in the center of the modal container */
-    display:grid;
-    margin:auto;
   }
-  
-  .loginbtn:hover {
-    opacity: 0.8;
+}
+
+/* Set a style for all buttons */
+.loginbtn {
+  background-color: $green;
+  color: $white;
+  padding: 14px 100px;
+  margin: 8px 0;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $green;
+  cursor: pointer;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+
+  /*we put the button in the center of the modal container */
+  display: grid;
+  margin: auto;
+}
+
+.loginbtn:hover {
+  opacity: 0.8;
+}
+
+.idonthave {
+  text-align: center;
+  display: grid;
+  margin: auto;
+  font-size: 20px;
+  line-height: 3.583;
+  color: $green;
+
+  a {
+    text-decoration: none;
+    color: $green;
   }
-  
-  .idonthave{
-    text-align: center;
-    display:grid;
-    margin:auto;
-    font-size:20px;
-    line-height: 3.583;
-    color:$green;
-    
-    a{
-      text-decoration: none;
-      color:$green;
-    }
-    a:hover{
-      opacity:0.7;
-    }
+
+  a:hover {
+    opacity: 0.7;
   }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
   }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
+
+  to {
+    -webkit-transform: scale(1)
   }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
   }
-.page-content{
-  width:100%;
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.page-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 /*---------Styling carousel banner---*/
 .slideshow-container {
   max-width: 950px;
   position: relative;
   margin: auto;
-  color:$white;
-  margin-top:111px;
+  color: $white;
+  margin-top: 111px;
 
-    /* Styling the Left text */
-    .text-left {
-      position: absolute;
-      font-size: 50px;
-      top:3%;
-      left:5%;
+  /* Styling the Left text */
+  .text-left {
+    position: absolute;
+    font-size: 50px;
+    top: 3%;
+    left: 5%;
+  }
+
+  .minitext-left {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    top: 50%;
+    left: 6%;
+  }
+
+  .viewmorebtn {
+    position: absolute;
+    border: 2px solid $third-color;
+    border-radius: 25px;
+    background-color: $third-color;
+    padding: 10px 35px;
+    bottom: 20%;
+    left: 6%;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: $white;
     }
-    .minitext-left{
-      position: absolute;
-      font-size: 15px;
-      font-weight:400;
-      top:50%;
-      left:6%;
+  }
+
+  .viewmorebtn:hover {
+    background-color: $white;
+    color: $third-color;
+
+    a {
+      color: $third-color;
     }
-    .viewmorebtn{
-      position: absolute;
-      border:2px solid $third-color;
-      border-radius:25px;
-      background-color: $third-color;
-      padding:10px 35px;
-      bottom:20%;
-      left:6%;
-      text-transform: uppercase;
-        a{
-          text-decoration: none;
-          color:$white;
-        }
+  }
+
+  /*Styling the center text */
+  .text-center {
+    left: 31%;
+    text-align: center;
+  }
+
+  .minitext-center {
+    left: 32%;
+    text-align: center;
+  }
+
+  .center {
+    text-align: center;
+    left: 42%;
+  }
+
+  /*Styling the right text*/
+  .text-right {
+    position: absolute;
+    font-size: 50px;
+    top: 3%;
+    right: 5%;
+    text-align: right;
+  }
+
+  .minitext-right {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    top: 50%;
+    right: 10%;
+    text-align: right;
+  }
+
+  .viewmorebtn-right {
+    position: absolute;
+    border: 2px solid $third-color;
+    border-radius: 25px;
+    background-color: $third-color;
+    padding: 10px 35px;
+    bottom: 20%;
+    right: 10%;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: $white;
     }
-    .viewmorebtn:hover{
-      background-color: $white;
-      color:$third-color;
-      a{
-        color:$third-color;
-      }
+  }
+
+  .viewmorebtn-right:hover {
+    background-color: $white;
+    color: $black;
+
+    a {
+      color: black;
     }
-    /*Styling the center text */
-    .text-center {
-      left: 31%;
-      text-align: center;
-    }
-    .minitext-center{
-      left:32%;
-      text-align: center;
-    }
-    .center{
-      text-align: center;
-      left:42%;
-    }
-    /*Styling the right text*/
-    .text-right{
-      position: absolute;
-      font-size: 50px;
-      top:3%;
-      right:5%;
-      text-align:right;
-    }
-    .minitext-right{
-      position: absolute;
-      font-size: 15px;
-      font-weight:400;
-      top:50%;
-      right:10%;
-      text-align:right;
-    }
-    .viewmorebtn-right{
-      position: absolute;
-      border:2px solid $third-color;
-      border-radius:25px;
-      background-color: $third-color;
-      padding:10px 35px;
-      bottom:20%;
-      right:10%;
-      text-transform: uppercase;
-        a{
-          text-decoration: none;
-          color:$white;
-        }
-    }
-    .viewmorebtn-right:hover{
-      background-color: $white;
-      color:$black;
-      a{
-        color:black;
-      }
-    }
+  }
 
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  
-  img{
-    width:100%;
+
+  img {
+    width: 100%;
   }
 }
-.alldots{
+
+.alldots {
   position: absolute;
-  text-align:center;
-	bottom:5%;
-  width:100%;
+  text-align: center;
+  bottom: 5%;
+  width: 100%;
+
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
@@ -408,16 +467,18 @@ body {
     width: 10px;
     margin: 0% 1%;
     background-color: $white;
-    border:4px solid transparent;
-    opacity:0.502;
+    border: 4px solid transparent;
+    opacity: 0.502;
     border-radius: 50%;
-    display:inline-block;
+    display: inline-block;
     transition: background-color 0.6s ease;
   }
-  .active, .dot:hover {
-    border:4px solid $white;
+
+  .active,
+  .dot:hover {
+    border: 4px solid $white;
     background-color: transparent;
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -430,29 +491,43 @@ body {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-//----------------------ABOUT-US SECTION-----------------
-.about-section{
-  margin:5% 20%;
-  margin-bottom: -5%;
-  h1{
-    text-align: center;
-    font-size:40pt;
+  from {
+    opacity: .4
   }
-  p{
-    font-size:12pt;
+
+  to {
+    opacity: 1
+  }
+}
+
+//----------------------ABOUT-US SECTION-----------------
+.about-section {
+  margin: 5% 20%;
+  margin-bottom: -5%;
+
+  h1 {
     text-align: center;
-    line-break:loose;
+    font-size: 40pt;
+  }
+
+  p {
+    font-size: 12pt;
+    text-align: center;
+    line-break: loose;
     font-weight: 300;
   }
-  img{
+
+  img {
     width: 40%;
     position: relative;
     right: -30%;
@@ -460,88 +535,104 @@ body {
     opacity: 0.75;
   }
 }
-.our-instruments{
-  border:2px solid $third-color;
-  color:$white;
+
+.our-instruments {
+  border: 2px solid $third-color;
+  color: $white;
   background-color: $third-color;
-  text-align:center;
-  margin:0px -8px;  
+  text-align: center;
+  margin: 0px -8px;
   margin-bottom: 2%;
   padding-bottom: 4%;
-  a{
+
+  a {
     text-decoration: none;
-    color:black;
+    color: black;
   }
-  p{
-    font-weight:300;
-    font-size:12pt;
-    margin-bottom:2%;
+
+  p {
+    font-weight: 300;
+    font-size: 12pt;
+    margin-bottom: 2%;
   }
-  .multiple-items{
+
+  .multiple-items {
     margin-left: 2%;
-    display:flex;
+    display: flex;
   }
-  .slick-arrow{
-    border:none;
-    box-sizing:none;
+
+  .slick-arrow {
+    border: none;
+    box-sizing: none;
     background-color: transparent;
-    color:white;
+    color: white;
     font-size: 17pt;
     margin-right: 3.5%;
   }
-  .slick-slide{
-    img{
+
+  .slick-slide {
+    img {
       display: inline;
-    border: 2px solid white;
-    border-bottom: 99px solid white;
-    position: relative;
-    }
-    .trump{
       border: 2px solid white;
-    border-bottom: 128px solid white;
+      border-bottom: 99px solid white;
+      position: relative;
     }
-    .text{
+
+    .trump {
+      border: 2px solid white;
+      border-bottom: 128px solid white;
+    }
+
+    .text {
       position: absolute;
       bottom: 41px;
       margin-left: 1.9%;
-      p{
-        font-size:10pt;
+
+      p {
+        font-size: 10pt;
       }
     }
-    .drums{
-      margin-left:2.3%;
+
+    .drums {
+      margin-left: 2.3%;
     }
-    .trumpet{
-      margin-left:2%;
+
+    .trumpet {
+      margin-left: 2%;
     }
-    .buttons{
+
+    .buttons {
       position: absolute;
       bottom: 7px;
       margin-left: 1.4%;
-      button{
-        border:none;
+
+      button {
+        border: none;
         background-color: transparent;
         font-size: 20pt;
         margin-left: 27px;
-        cursor:pointer;
+        cursor: pointer;
       }
-      .Plus-button:hover{
-        color:$green;
+
+      .Plus-button:hover {
+        color: $green;
       }
-      .Heart-button:hover{
-        color:red;
+
+      .Heart-button:hover {
+        color: red;
       }
-      
+
     }
   }
- 
+
 }
-.upcoming-artists{
-  border:2px solid $main-color;
-  color:$black;
+
+.upcoming-artists {
+  border: 2px solid $main-color;
+  color: $black;
   background-color: $main-color;
-  text-align:center;
-  margin:0px -8px;  
+  text-align: center;
+  margin: 0px -8px;
   margin-bottom: 2%;
   padding-bottom: 4%;
   display: flex;
@@ -549,166 +640,198 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  p{
-    font-weight:300;
-    font-size:12pt;
+
+  p {
+    font-weight: 300;
+    font-size: 12pt;
   }
-  h1{
-    font-size:3em;
+
+  h1 {
+    font-size: 3em;
   }
-  .artists{
-    border:2px solid #E0DDAA;
+
+  .artists {
+    border: 2px solid #E0DDAA;
     background-color: #E0DDAA;
-    color:$black;
+    color: $black;
     display: flex;
     flex-direction: column;
-    width:50%;
-    align-items:center;
-    border-radius:20px;
-    
-    .row{
+    width: 50%;
+    align-items: center;
+    border-radius: 20px;
+
+    .row {
       display: flex;
       flex-direction: row;
-      padding:2%;
+      padding: 2%;
       width: 100%;
       justify-content: space-between;
-      .numbers{
+
+      .numbers {
         font-weight: 700;
         margin-left: 14%;
       }
-      .name{
-        font-weight:700;
-        
+
+      .name {
+        font-weight: 700;
+
       }
-      button{
-        border:2px solid $third-color;
-        border-radius:25px;
+
+      button {
+        border: 2px solid $third-color;
+        border-radius: 25px;
         background-color: $third-color;
-        padding:10px 35px;
+        padding: 10px 35px;
         margin: 9px;
         margin-right: 40px;
-        a{
+
+        a {
           text-decoration: none;
-          color:white;
+          color: white;
           font-family: inherit;
           text-transform: uppercase;
         }
-        &:hover{
+
+        &:hover {
           background-color: $white;
-          color:$black;
-          a{
-            color:$black;
+          color: $black;
+
+          a {
+            color: $black;
           }
         }
       }
     }
   }
 }
-.image-section{
+
+.image-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:0 10%;
-  .row{
+  margin: 0 10%;
+
+  .row {
     display: flex;
-    width:100%;
-    margin:10px 12px;
-    img{
+    width: 100%;
+    margin: 10px 12px;
+
+    img {
       width: 40%;
     }
-    iframe{
-      width:60%;
-      margin-right:10%;
+
+    iframe {
+      width: 60%;
+      margin-right: 10%;
     }
-    .text{
-      margin-right:10%;
-      p{
+
+    .text {
+      margin-right: 10%;
+
+      p {
         font-weight: 100;
       }
-      button{
-        border:2px solid $fourth-color;
+
+      button {
+        border: 2px solid $fourth-color;
         background-color: $fourth-color;
-        border-radius:25px;
-        padding:10px 25px;
+        border-radius: 25px;
+        padding: 10px 25px;
         box-shadow: 5px 5px 5px $third-color;
-        a{
+
+        a {
           text-decoration: none;
-          color:white;
+          color: white;
         }
       }
     }
-    .text1{
-      margin-right:0;
-      p{
+
+    .text1 {
+      margin-right: 0;
+
+      p {
         font-weight: 100;
       }
     }
-    .text2{
-      margin-left:10%;
-      p{
+
+    .text2 {
+      margin-left: 10%;
+
+      p {
         font-weight: 100;
       }
     }
   }
 }
-.footer{
-  border:2px solid $third-color;
-  color:$white;
+
+.footer {
+  border: 2px solid $third-color;
+  color: $white;
   background-color: $third-color;
   margin: 0px -8px;
   margin-bottom: -10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom:20px;
-  .title{
+  padding-bottom: 20px;
+
+  .title {
     text-align: center;
-    p{
-      font-weight:200;
+
+    p {
+      font-weight: 200;
     }
-    h1{
-      margin:0;
-      margin-top:40px;
+
+    h1 {
+      margin: 0;
+      margin-top: 40px;
       font-size: 40pt;
     }
   }
-  .images{
+
+  .images {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    img{
-      width:15%;
+
+    img {
+      width: 15%;
       margin: 2% 0.5%;
     }
   }
-  .social-media{
+
+  .social-media {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    .copyright{
+
+    .copyright {
       display: flex;
       flex-direction: column;
       text-align: start;
-      p{
-        font-weight:200;
+
+      p {
+        font-weight: 200;
       }
-      a{
+
+      a {
         text-decoration: none;
-        color:inherit;
+        color: inherit;
         font-weight: 200;
       }
     }
-    .forms{
-      #email-input{
+
+    .forms {
+      #email-input {
         width: 85%;
         margin: 0 auto;
         position: relative;
 
-        input[type=email]{
+        input[type=email] {
           border-radius: 35px;
           border: 0.15rem solid grey;
           padding: 0.7142857143rem 1.4285714286rem;
@@ -717,13 +840,15 @@ body {
           font-size: 1rem;
           transition: all 0.5s ease;
         }
-        input[type=submit]{
+
+        input[type=submit] {
           position: absolute;
           opacity: 0;
           visibility: hidden;
         }
-        label{
-          i{
+
+        label {
+          i {
             cursor: pointer;
             position: absolute;
             top: 40%;
@@ -736,90 +861,285 @@ body {
             transition: opacity 0.3s ease;
             font-size: 25px;
           }
-          i:hover{
-            color:$green;
+
+          i:hover {
+            color: $green;
           }
         }
       }
-      .pages{
+
+      .pages {
         display: flex;
         flex-direction: column;
-        a{
+
+        a {
           text-decoration: none;
-          color:white;
+          color: white;
           opacity: 0.5;
         }
-        a:hover{
+
+        a:hover {
           opacity: 1;
         }
       }
     }
-    .social-icons{
-      width:20%;
-      a{
+
+    .social-icons {
+      width: 20%;
+
+      a {
         text-decoration: none;
-        color:$white;
-        margin-left:11%;
+        color: $white;
+        margin-left: 11%;
       }
     }
   }
 }
+
 /*-------------------------------PRODUCTS PAGE--------------*/
-.productpagecontent{
-  width:100%;
+.productpagecontent {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .title{
-    margin-top:7%;
+
+  .title {
+    margin-top: 7%;
     text-align: center;
-    font-size:12pt;
+    font-size: 12pt;
   }
-  .filters{
-    border:2px solid white;
+
+  .filters {
+    border: 2px solid white;
     background-color: white;
-    width:80%;
-    .filters-title{
-      text-align:center;
+    width: 80%;
+
+    .filters-title {
+      text-align: center;
       font-weight: 600;
     }
-    .column1, .column2{
+
+    .column1,
+    .column2 {
       display: flex;
       justify-content: space-evenly;
-      margin-bottom:20px;
-      div{
+      margin-bottom: 20px;
+
+      div {
         margin-right: 15%;
         margin-left: 20px;
-        select{
-          border:2px solid grey;
-          border-radius:25px;
-          padding:2%;
-          padding-right:20%;
-          outline:none;
+
+        select {
+          border: 2px solid grey;
+          border-radius: 25px;
+          padding: 2%;
+          padding-right: 20%;
+          outline: none;
         }
       }
     }
   }
-  .products{
+
+  .products {
     display: flex;
     flex-direction: column;
-    width:80%;
-    .products-title{
+    width: 80%;
+
+    .products-title {
       text-align: center;
     }
-    .row{
+
+    .row {
       display: flex;
-      .img{
-        .product-image{
-        width:50%;
+      div{
+        position: relative;
+        text-align:center;
+        width:70%;
+        margin: 1% 2% 1% -1%;
+        img{
+          width:85%;
         }
-        h1{
-          font-size:10pt;
+        .text{
+          position:absolute;
+          bottom: 18%;
+          left: 14%;
+          color:black;
+          font-size:11pt;
+          font-weight:400;
+          .price{
+          position:absolute;
+          bottom: -43%;
+          left:38%;
+          color:black;
+          font-size:11pt;
+          }
         }
-        p{
-          font-size:10pt;
+       .buttons{
+         position: absolute;
+         bottom: 5%;
+         left:12%;
+         button{
+          border:none;
+          background-color: transparent;
+          font-size:12pt;
+         }
+         .Plus-button:hover{
+           cursor: pointer;
+           color:$green;
+         }
+         .Heart-button:hover{
+           cursor:pointer;
+           color:red;
+         }
+       } 
+      }
+    }
+    .loadbtn-section{
+      display:flex;
+      justify-content: center;
+      margin-bottom:2%;
+      button{
+        border:2px solid $third-color;
+        border-radius: 25px;
+        background-color: $third-color;
+        color:white;
+        font-size:18px;
+        text-transform: uppercase;
+        padding:1% 5%;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      button:hover{
+        background-color: transparent;
+        color:$third-color;
+      }
+    }
+    .box-hidden{
+      display:none;
+    }
+  }
+}
+/*----------------PRODUCT PAGE-------------*/
+.productcontent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .productbox{
+    border:2px solid white;
+    background-color: white;
+    display: flex;
+    width:80%;
+    .content-left{
+      .slide{
+        width:100%;
+        padding-right:4%;
+
+        /* Hide the images by default */
+        .mySlides1 { 
+          display: none;
+          width:100%;
+          position: relative;
+
+          img{
+            width:100%;
+          }
+          i{
+            position: absolute;
+            top:3%;
+            left:3%;
+            font-size:20px;
+            color:$green;
+          }
+          i:hover{
+            cursor:pointer;
+          }
         }
       }
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+    
+      .smallpic-row{
+        display:grid;
+        margin-bottom:20%;
+
+          /* Six columns side by side */
+          .smallpic-column {
+            float: left;
+            width: 100%;
+
+            img{
+              width:100%;
+              height:auto;
+              border:2px solid grey;
+            }
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+              opacity: 0.6;
+              width:100%;
+            }
+            .active,
+            .demo:hover {
+              opacity: 1;
+              width:100%;
+              border:2px solid $green;
+            }
+          }
+      }
+      /* Style the Image Used to Trigger the Modal */
+      .myImg01 {
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      /* The Modal (background) */
+      .modal01 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 12; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height:100%;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: $black; /* Fallback color */
+        background-color: grey;  /* Black w/ opacity */
+      }
+
+      /* Modal Content (Image) */
+      .modal-content01 {
+        margin: auto;
+        display: block;
+        width: 30%;
+        max-width: 700px;
+      }
+
+      @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+      }
+
+      /* The Close Button */
+      .close01 {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close01:hover,
+      .close01:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
     }
   }
 }

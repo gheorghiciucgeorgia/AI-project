@@ -9,7 +9,7 @@ body {
   border: 2px solid transparent;
   display: flex;
   width: 101%;
-  background-color: #E0DDAA;
+  background-color: white;
   margin: -10px 0px 0px -10px;
   position: fixed;
   z-index: 100;
@@ -184,7 +184,9 @@ body {
 }
 
 /* The fields of the email and lato */
-input[type=email], input[type=password], input[type=text] {
+input[type=email],
+input[type=password],
+input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -415,7 +417,8 @@ span.psw a {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.alldots .active, .alldots .dot:hover {
+.alldots .active,
+.alldots .dot:hover {
   border: 4px solid white;
   background-color: transparent;
   opacity: 1;
@@ -785,16 +788,19 @@ span.psw a {
   text-align: center;
   font-weight: 600;
 }
-.productpagecontent .filters .column1, .productpagecontent .filters .column2 {
+.productpagecontent .filters .column1,
+.productpagecontent .filters .column2 {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-.productpagecontent .filters .column1 div, .productpagecontent .filters .column2 div {
+.productpagecontent .filters .column1 div,
+.productpagecontent .filters .column2 div {
   margin-right: 15%;
   margin-left: 20px;
 }
-.productpagecontent .filters .column1 div select, .productpagecontent .filters .column2 div select {
+.productpagecontent .filters .column1 div select,
+.productpagecontent .filters .column2 div select {
   border: 2px solid grey;
   border-radius: 25px;
   padding: 2%;
@@ -812,14 +818,196 @@ span.psw a {
 .productpagecontent .products .row {
   display: flex;
 }
-.productpagecontent .products .row .img .product-image {
-  width: 50%;
+.productpagecontent .products .row div {
+  position: relative;
+  text-align: center;
+  width: 70%;
+  margin: 1% 2% 1% -1%;
 }
-.productpagecontent .products .row .img h1 {
-  font-size: 10pt;
+.productpagecontent .products .row div img {
+  width: 85%;
 }
-.productpagecontent .products .row .img p {
-  font-size: 10pt;
+.productpagecontent .products .row div .text {
+  position: absolute;
+  bottom: 18%;
+  left: 14%;
+  color: black;
+  font-size: 11pt;
+  font-weight: 400;
+}
+.productpagecontent .products .row div .text .price {
+  position: absolute;
+  bottom: -43%;
+  left: 38%;
+  color: black;
+  font-size: 11pt;
+}
+.productpagecontent .products .row div .buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 12%;
+}
+.productpagecontent .products .row div .buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 12pt;
+}
+.productpagecontent .products .row div .buttons .Plus-button:hover {
+  cursor: pointer;
+  color: #84bc22;
+}
+.productpagecontent .products .row div .buttons .Heart-button:hover {
+  cursor: pointer;
+  color: red;
+}
+.productpagecontent .products .loadbtn-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.productpagecontent .products .loadbtn-section button {
+  border: 2px solid #203239;
+  border-radius: 25px;
+  background-color: #203239;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 1% 5%;
+  cursor: pointer;
+  font-family: inherit;
+}
+.productpagecontent .products .loadbtn-section button:hover {
+  background-color: transparent;
+  color: #203239;
+}
+.productpagecontent .products .box-hidden {
+  display: none;
+}
+
+/*----------------PRODUCT PAGE-------------*/
+.productcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productcontent .productbox {
+  border: 2px solid white;
+  background-color: white;
+  display: flex;
+  width: 80%;
+}
+.productcontent .productbox .content-left {
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Style the Image Used to Trigger the Modal */
+  /* The Modal (background) */
+  /* Modal Content (Image) */
+  /* The Close Button */
+}
+.productcontent .productbox .content-left .slide {
+  width: 100%;
+  padding-right: 4%;
+  /* Hide the images by default */
+}
+.productcontent .productbox .content-left .slide .mySlides1 {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+.productcontent .productbox .content-left .slide .mySlides1 img {
+  width: 100%;
+}
+.productcontent .productbox .content-left .slide .mySlides1 i {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 20px;
+  color: #84bc22;
+}
+.productcontent .productbox .content-left .slide .mySlides1 i:hover {
+  cursor: pointer;
+}
+.productcontent .productbox .content-left .cursor {
+  cursor: pointer;
+}
+.productcontent .productbox .content-left .smallpic-row {
+  display: grid;
+  margin-bottom: 20%;
+  /* Six columns side by side */
+}
+.productcontent .productbox .content-left .smallpic-row .smallpic-column {
+  float: left;
+  width: 100%;
+  /* Add a transparency effect for thumnbail images */
+}
+.productcontent .productbox .content-left .smallpic-row .smallpic-column img {
+  width: 100%;
+  height: auto;
+  border: 2px solid grey;
+}
+.productcontent .productbox .content-left .smallpic-row .smallpic-column .demo {
+  opacity: 0.6;
+  width: 100%;
+}
+.productcontent .productbox .content-left .smallpic-row .smallpic-column .active,
+.productcontent .productbox .content-left .smallpic-row .smallpic-column .demo:hover {
+  opacity: 1;
+  width: 100%;
+  border: 2px solid #84bc22;
+}
+.productcontent .productbox .content-left .myImg01 {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.productcontent .productbox .content-left .modal01 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 12;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: grey;
+  /* Black w/ opacity */
+}
+.productcontent .productbox .content-left .modal-content01 {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.productcontent .productbox .content-left .close01 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.productcontent .productbox .content-left .close01:hover,
+.productcontent .productbox .content-left .close01:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,3 +61,5 @@ $('.slick-next').each(function() {
   $(this).html('<i class="fa-solid fa-circle-arrow-right"></i>');
 });
 
+
+

@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Nes Music</title> <!--Titlu momentan-- Mai putem modifica aici-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Nes Music</title>
+  <!--Titlu momentan-- Mai putem modifica aici-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!--Link pentru legare css de pagina de html-->
-	<link href="CSS/style.css" rel="stylesheet">
+  <!--Link pentru legare css de pagina de html-->
+  <link href="CSS/style.css" rel="stylesheet">
 
-	<!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+  <!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
+
 <body>
   <!--------------------------HEADER---------------------->
   <div class="navigation-menu">
@@ -25,7 +28,7 @@
     <div class="menu">
       <span class="btn1"><a href="products.html"></a></span>
       <span class="btn2"><a href="index.html#about"></a></span>
-      <span class="btn3"><a href="contact.html"></a></span>
+      <span class="btn3"><a href="index.html#footer"></a></span>
     </div>
     <div class="icons">
       <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -35,10 +38,10 @@
     </div>
   </div>
 
-   <!--------------------------LOGIN MODAL---------------------->
-   <div id="id01" class="modal">
-  
-    <form class="modal-content animate"  method="post">
+  <!--------------------------LOGIN MODAL---------------------->
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" method="post">
 
       <div class="imgcontainer">
 
@@ -46,18 +49,19 @@
         <span id="close-icon" class="close" title="Close Modal">&times;</span>
 
       </div>
-  
+
       <div class="container">
 
         <label for="uname"><b>Email</b></label>
-        <input type="email"  name="uname"  required>
+        <input type="email" name="uname" required>
         <label for="psw"><b>Lato</b></label><span class="psw"><a href="#">forgot password</a></span>
-        
+
         <div class="input-container">
 
-        <i class="far fa-eye" id="togglePassword"></i>
-        <input type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
-        
+          <i class="far fa-eye" id="togglePassword"></i>
+          <input type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
+
         </div>
 
         <button type="submit" class="loginbtn">Login</button>
@@ -83,197 +87,727 @@
           <div>
             <label for="price" class="title-label">Price</label>
 
-					    <select id="price" name="user_price">
+            <select id="price" name="user_price">
 
-						    <option value="0-100">$0.00-$100.00</option>
-						    <option value="100-500">$100.00-$500.00</option>
-						    <option value="100-500">$500.00-$1000.00</option>
-						    <option value="100-500">$1000.00-$5000.00</option>
+              <option value="0-100">$0.00-$100.00</option>
+              <option value="100-500">$100.00-$500.00</option>
+              <option value="100-500">$500.00-$1000.00</option>
+              <option value="100-500">$1000.00-$5000.00</option>
 
-					    </select>
-              
+            </select>
+
           </div>
 
           <div>
             <label for="brands" class="title-label">Brands</label>
-              <select id="brands" name="user_brands">
-  
-                <option value="Ukraine-sport">Ukraine sport</option>
-                <option value="Deutch-sport">Deutch sport</option>
-                <option value="Finland-sport">Finland sport</option>
-                <option value="America-sport">America sport</option>
-  
-              </select>
+            <select id="brands" name="user_brands">
+
+              <option value="Ukraine-sport">Ukraine sport</option>
+              <option value="Deutch-sport">Deutch sport</option>
+              <option value="Finland-sport">Finland sport</option>
+              <option value="America-sport">America sport</option>
+
+            </select>
           </div>
 
           <div>
             <label for="size" class="title-label">Size</label>
 
-					  <select id="size" name="user_size">
+            <select id="size" name="user_size">
 
-						  <option value="small">Small</option>
-						  <option value="medium">Medium</option>
-						  <option value="large">Large</option>
-						  <option value="extra-large">Extra Large</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="extra-large">Extra Large</option>
 
-					  </select>
+            </select>
           </div>
         </div>
 
+      </div>
+      <div class="column2">
+
+        <div>
+          <label for="material" class="title-label">Material</label>
+
+          <select id="material" name="user_material">
+
+            <option value="material">Material</option>
+            <option value="material">Wood</option>
+            <option value="material">Plastic</option>
+
+          </select>
         </div>
-        <div class="column2">
-          
-          <div>
-            <label for="material" class="title-label">Material</label>
 
-					    <select id="material" name="user_material"> 
+        <div>
+          <label for="sort" class="title-label">Sort</label>
 
-						  <option value="material">Material</option>
-						  <option value="material">Wood</option>
-					  	<option value="material">Plastic</option>
+          <select id="sort" name="user_sort">
 
-					    </select>
-          </div>
+            <option value="sort">Price</option>
+            <option value="sort">Oldest to Newest</option>
+            <option value="sort">Newest to Oldest</option>
+            <option value="sort">Price:Low to High</option>
+            <option value="sort">Price:High to Low</option>
 
-          <div>
-            <label for="sort" class="title-label">Sort</label>
+          </select>
+        </div>
+        <div>
+          <label for="show" class="title-label">Show</label>
 
-					  <select id="sort" name="user_sort">
+          <select id="show" name="user_show">
 
-						  <option value="sort">Price</option>
-						  <option value="sort">Oldest to Newest</option>
-						  <option value="sort">Newest to Oldest</option>
-						  <option value="sort">Price:Low to High</option>
-						  <option value="sort">Price:High to Low</option>
+            <option value="show">16 per page</option>
+            <option value="show">50 per page</option>
+            <option value="show">100 per page</option>
+            <option value="show">all items</option>
 
-					  </select>
-          </div>
-          <div>
-            <label for="show" class="title-label">Show</label>
-
-				  	<select id="show" name="user_show">
-
-						  <option value="show">16 per page</option>
-						  <option value="show">50 per page</option>
-						  <option value="show">100 per page</option>
-						  <option value="show">all items</option>
-
-					  </select>
-          </div>
+          </select>
         </div>
       </div>
+    </div>
     <div class="products">
       <div class="products-title">
         <p class="title-products">12,931 results in apparel</p>
       </div>
-      <div class="row">
-        <div class="img">
-            <img class="product-image" src="img/prd2.png" alt="Product Image1">
-            <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-            <p class="price">$ 799.55</p>
+      <!--PRIMUL RAND-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        
       </div>
-      <div class="row">
-        <div class="img">
-            <img class="product-image" src="img/prd2.png" alt="Product Image1">
-            <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-            <p class="price">$ 799.55</p>
+
+      <!--AL DOILEA RAND-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd7.jpg">
+            <div class="text">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        
       </div>
-      <div class="row">
-        <div class="img">
-            <img class="product-image" src="img/prd2.png" alt="Product Image1">
-            <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-            <p class="price">$ 799.55</p>
+      <!--AL TREILEA RAND RAND-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        
       </div>
-      <div class="row">
-        <div class="img">
-            <img class="product-image" src="img/prd2.png" alt="Product Image1">
-            <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-            <p class="price">$ 799.55</p>
+
+      <!--AL PATRULEAs RAND-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd7.jpg">
+            <div class="text">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        <div class="img">
-          <img class="product-image" src="img/prd2.png" alt="Product Image1">
-          <h1 class="product-title">Kristina Dam Oak Table With White Marble Top</h1>
-          <p class="price">$ 799.55</p>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
+          </div>
         </div>
-        
+      </div>
+
+      <!---LOAD MORE SECTION-->
+      <!--PRIMUL RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!--AL DOILEA RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd7.jpg">
+            <div class="text">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      <!--AL TREILEA RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!--AL PATRULEA RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd7.jpg">
+            <div class="text">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      <!--AL CINCILEA RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!--AL SASLEA RAND LOAD MORE-->
+      <div class="row box-hidden">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd7.jpg">
+            <div class="text">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="loadbtn-section">
+
+        <button id="loadMore" class="load-btn">Load More <i class="fa-solid fa-spinner"></i></button>
+
       </div>
     </div>
-  </div>
-  <!--------------------------FOOTER---------------------->
-  <div class="footer">
-    <div class="title">
-      <h1>NesMusic</h1>
-      <p>Instagram @NesMusic</p>
-    </div>
-    <div class="images">
-      <img src="img/img1.png">
-      <img src="img/img2.png">
-      <img src="img/img3.png">
-      <img src="img/img4.png">
-      <img src="img/img5.png">
-    </div>
-    <div class="social-media">
+    <!--------------------------FOOTER---------------------->
+    <div id="footer" class="footer">
+      <div class="title">
+        <h1>NesMusic</h1>
+        <p>Instagram @NesMusic</p>
+      </div>
+      <div class="images">
+        <img src="img/img1.png">
+        <img src="img/img2.png">
+        <img src="img/img3.png">
+        <img src="img/img4.png">
+        <img src="img/img5.png">
+      </div>
+      <div class="social-media">
         <div class="copyright">
           <p>Copyright &copy;</p>
           <a href="mailto:gheorghiciucgeorgia@gmail.com">gheorghiciucgeorgia@gmail.com</a>
@@ -284,40 +818,43 @@
 
           <form id="email-input">
 
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Subscribe" id="email" required>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Subscribe"
+              id="email" required>
             <input type="submit" value="Email" id="subscribe">
             <label for="subscribe" id="forSubscribe">
-    
-                <i class="fas fa-chevron-circle-right"></i>
-    
+
+              <i class="fas fa-chevron-circle-right"></i>
+
             </label>
-    
-        </form>
 
-        <div class="pages">
-          <a href="products.html">Products</a>
-          <a href="index.html#about">About us</a>
-          <a href="contact.html">Contact us</a>
-        </div>
+          </form>
 
-        </div>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://twitter.com/?lang=ro"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.spotify.com/us/"><i class="fa-brands fa-spotify"></i></a>
+          <div class="pages">
+            <a href="products.html">Products</a>
+            <a href="index.html#about">About us</a>
+            <a href="index.html#footer">Contact us</a>
           </div>
+
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://twitter.com/?lang=ro"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.spotify.com/us/"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+      </div>
     </div>
+
   </div>
 
-</div>
-
-<!--Jquery pentru functia de linku-ri -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/login.js"></script>
+  <!--Jquery pentru functia de linku-ri -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/products-script.js"></script>
+  
 </body>
+
 </html>

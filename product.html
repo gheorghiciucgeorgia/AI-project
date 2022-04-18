@@ -1,41 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Nes Music</title> <!--Titlu momentan-- Mai putem modifica aici-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Nes Music</title>
+  <!--Titlu momentan-- Mai putem modifica aici-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!--Link pentru legare css de pagina de html-->
-	<link href="CSS/style.css" rel="stylesheet">
+  <!--Link pentru legare css de pagina de html-->
+  <link href="CSS/style.css" rel="stylesheet">
 
-	<!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+  <!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
+
 <body>
-    <div class="navigation-menu">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png"></a>
-        </div>
-        <div class="menu">
-            <span class="btn1"><a href="products.html"></a></span>
-            <span class="btn2"><a href="index.html#about"></a></span>
-            <span class="btn3"><a href="contact.html"></a></span>
-        </div>
-        <div class="icons">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a href="#"><i class="fa-solid fa-heart"></i></a>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+  <div class="navigation-menu">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png"></a>
+    </div>
+    <div class="menu">
+      <span class="btn1"><a href="products.html"></a></span>
+      <span class="btn2"><a href="index.html#about"></a></span>
+      <span class="btn3"><a href="index.html#footer"></a></span>
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </div>
+  <div class="productcontent">
+    <div class="productbox">
+      <div class="content-left">
+        <div class="content-left">
+
+          <!-- Full-width images with number text -->
+
+          <div class="slide">
+
+            <div class="mySlides1">
+
+              <img class="myImg01" src="img/pd1.png">
+              <i class="fas fa-expand-arrows-alt expand-button"></i>
+
+            </div>
+
+            <div class="mySlides1">
+
+              <img class="myImg01" src="img/pd2.png">
+              <i class="fas fa-expand-arrows-alt expand-button"></i>
+
+            </div>
+
+            <div class="mySlides1">
+
+              <img class="myImg01" src="img/pd3.png">
+              <i class="fas fa-expand-arrows-alt expand-button"></i>
+
+            </div>
+
+            <div class="mySlides1">
+
+              <img class="myImg01" src="img/pd4.png">
+              <i class="fas fa-expand-arrows-alt expand-button"></i>
+
+            </div>
+
+          </div>
+
+
+          <!-- The Modal -->
+          <div id="myModal01" class="modal01">
+
+            <span class="close01">&times;</span>
+
+            <img class="modal-content01" id="img01">
+
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="smallpic-row">
+
+            <div class="smallpic-column">
+
+              <img class="demo cursor" src="img/pd1-small.png" alt="Blue Woman Front">
+
+            </div>
+
+            <div class="smallpic-column">
+
+              <img class="demo cursor" src="img/pd2-small.png" alt="Blue Woman Front">
+
+            </div>
+
+            <div class="smallpic-column">
+
+              <img class="demo cursor" src="img/pd3-small.png" alt="Black Woman Front">
+
+            </div>
+
+            <div class="smallpic-column">
+
+              <img class="demo cursor" src="img/pd4-small.png" alt="Black Woman Back">
+
+            </div>
+
+          </div>
+
         </div>
       </div>
-      <!--Jquery pentru functia de linku-ri -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>  
+      <div class="content-right">
+
+      </div>
+    </div>
+    <!--------------------------FOOTER---------------------->
+    <div id=footer class="footer">
+      <div class="title">
+        <h1>NesMusic</h1>
+        <p>Instagram @NesMusic</p>
+      </div>
+      <div class="images">
+        <img src="img/img1.png">
+        <img src="img/img2.png">
+        <img src="img/img3.png">
+        <img src="img/img4.png">
+        <img src="img/img5.png">
+      </div>
+      <div class="social-media">
+        <div class="copyright">
+          <p>Copyright &copy;</p>
+          <a href="mailto:gheorghiciucgeorgia@gmail.com">gheorghiciucgeorgia@gmail.com</a>
+          <a href="tel:+1 (888) 548-4344">+1 (888) 548-4344</a>
+        </div>
+
+        <div class="forms">
+
+          <form id="email-input">
+
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Subscribe"
+              id="email" required>
+            <input type="submit" value="Email" id="subscribe">
+            <label for="subscribe" id="forSubscribe">
+
+              <i class="fas fa-chevron-circle-right"></i>
+
+            </label>
+
+          </form>
+
+          <div class="pages">
+            <a href="products.html">Products</a>
+            <a href="index.html#about">About us</a>
+            <a href="index.html#footer">Contact us</a>
+          </div>
+
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://twitter.com/?lang=ro"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.spotify.com/us/"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Jquery pentru functia de linku-ri -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/product-script.js"></script>
 </body>
