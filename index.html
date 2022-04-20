@@ -1,447 +1,460 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Nes Music</title> <!--Titlu momentan-- Mai putem modifica aici-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Nes Music</title>
+  <!--Titlu momentan-- Mai putem modifica aici-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!--Link pentru legare css de pagina de html-->
-	<link href="CSS/style.css" rel="stylesheet">
+  <!--Link pentru legare css de pagina de html-->
+  <link href="CSS/style.css" rel="stylesheet">
 
-	<!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+  <!--Link-uri pentru fonturi in caz ca doresti sa folosesti un font care utilizatorul nu il are instalat in calculator se foloseste google-fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
+
 <body>
 
-<div class="navigation-menu">
-  <div class="logo">
-    <a href="index.html"><img src="img/logo.png"></a>
-  </div>
-  <div class="menu">
-    <span class="btn1"><a href="products.html"></a></span>
-    <span class="btn2"><a href="index.html#about"></a></span>
-    <span class="btn3"><a href="index.html#footer"></a></span>
-  </div>
-  <div class="icons">
-    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-    <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i><span class="ellipse">0</span></a>
-    <a href="#"><i class="fa-solid fa-heart"></i><span class="ellipse">0</span></a>
-    <a href="#" id="user-icon"><i class="fa-solid fa-user"></i></a>
-  </div>
-</div>
-
-    <!--Login Modal-->
-    <div id="id01" class="modal">
-  
-      <form class="modal-content animate"  method="post">
-
-        <div class="imgcontainer">
-
-          <h1>Sign In</h1>
-          <span id="close-icon" class="close" title="Close Modal">&times;</span>
-
-        </div>
-    
-        <div class="container">
-
-          <label for="uname"><b>Email</b></label>
-          <input type="email"  name="uname"  required>
-          <label for="psw"><b>Lato</b></label><span class="psw"><a href="#">forgot password</a></span>
-          
-          <div class="input-container">
-
-          <i class="far fa-eye" id="togglePassword"></i>
-          <input type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
-          
-          </div>
-
-          <button type="submit" class="loginbtn">Login</button>
-          <span class="idonthave"><a href="#">I don't have an account</a></span>
-
-        </div>
-  
-      </form>
-
+  <div class="navigation-menu">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png"></a>
     </div>
-    <!--End Login Modal-->
-<div class="page-content">
+    <div class="menu">
+      <span class="btn1"><a href="products.html"></a></span>
+      <span class="btn2"><a href="index.html#about"></a></span>
+      <span class="btn3"><a href="index.html#footer"></a></span>
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="cart.html" class="cart"><i class="fa-solid fa-basket-shopping"></i><span class="ellipse">0</span></a>
+      <a href="#" class="heart"><i class="fa-solid fa-heart"></i><span class="ellipse">0</span></a>
+      <a href="#" id="user-icon"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </div>
 
-    <div class="slideshow-container">
-          
-        <!--Full-width images with number and caption text-->
+  <!--Login Modal-->
+  <div id="id01" class="modal">
 
-        <div class="mySlides fade">
+    <form class="modal-content animate" method="post">
 
-          <img src="img/slide1.png" >
+      <div class="imgcontainer">
 
-          <h1 class="text-left">Control and manage <br>your instruments with the new app</h1>
-
-          <h2 class="minitext-left">Improve  the user experience <br>with the right mix of technologies and processes</h2>
-          
-          <button class="viewmorebtn left"><a href="#">Download</a></button>
-        
-        </div>
-
-        <div class="mySlides fade">
-
-          <img src="img/slide2.png" >
-
-          <h1 class="text-left text-center">Custom designs</h1>
-          
-          <button class="viewmorebtn center"><a href="#">Check it out</a></button>
-
-        </div>
-
-        <div class="mySlides fade">
-
-          <img src="img/slide3.png" >
-
-          <h1 class="text-right">Control and manage any <br>device with cloud solutions</h1>
-
-          <h2 class="minitext-right">Improve business performance and the user experience <br>with the right mix of IoT technology and processes</h2>
-          
-          <button class="viewmorebtn-right"><a href="CategoryLandingPage.html">view more</a></button>
-
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="img/slide4.png" >
-  
-            <h1 class="text-left">Control and manage any <br>device with cloud solutions</h1>
-
-            <h2 class="minitext-left">Improve business performance and the user experience <br>with the right mix of IoT technology and processes</h2>
-          
-            <button class="viewmorebtn left"><a href="CategoryLandingPage.html">view more</a></button>
-  
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="img/slide5.png" >
-  
-            <h1 class="text-left text-center">Control and manage any <br>device with cloud solutions</h1>
-
-            <h2 class="minitext-left minitext-center">Improve business performance and the user experience<br> with the right mix of IoT technology and processes</h2>
-            
-            <button class="viewmorebtn center"><a href="CategoryLandingPage.html">view more</a></button>
-  
-          </div>
-
-        <!-- The dots/circles -->
-
-        <div class="alldots">
-
-          <span class="dot"></span>
-
-          <span class="dot"></span>
-
-          <span class="dot"></span>
-
-          <span class="dot"></span>
-          
-          <span class="dot"></span>
-
-        </div>
+        <h1>Sign In</h1>
+        <span id="close-icon" class="close" title="Close Modal">&times;</span>
 
       </div>
 
-      <a name="about"><div class="about-section">
+      <div class="container">
+
+        <label for="uname"><b>Email</b></label>
+        <input type="email" name="uname" required>
+        <label for="psw"><b>Lato</b></label><span class="psw"><a href="#">forgot password</a></span>
+
+        <div class="input-container">
+
+          <i class="far fa-eye" id="togglePassword"></i>
+          <input type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
+
+        </div>
+
+        <button type="submit" class="loginbtn">Login</button>
+        <span class="idonthave"><a href="#">I don't have an account</a></span>
+
+      </div>
+
+    </form>
+
+  </div>
+  <!--End Login Modal-->
+  <div class="page-content">
+
+    <div class="slideshow-container">
+
+      <!--Full-width images with number and caption text-->
+
+      <div class="mySlides fade">
+
+        <img src="img/slide1.png">
+
+        <h1 class="text-left">Control and manage <br>your instruments with the new app</h1>
+
+        <h2 class="minitext-left">Improve the user experience <br>with the right mix of technologies and processes</h2>
+
+        <button class="viewmorebtn left"><a href="index.html#downloadlink">Download</a></button>
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="img/slide2.png">
+
+        <h1 class="text-left text-center">Custom designs</h1>
+
+        <button class="viewmorebtn center"><a href="#">Check it out</a></button>
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="img/slide3.png">
+
+        <h1 class="text-right">Control and manage any <br>device with cloud solutions</h1>
+
+        <h2 class="minitext-right">Improve business performance and the user experience <br>with the right mix of IoT
+          technology and processes</h2>
+
+        <button class="viewmorebtn-right"><a href="CategoryLandingPage.html">view more</a></button>
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="img/slide4.png">
+
+        <h1 class="text-left">Control and manage any <br>device with cloud solutions</h1>
+
+        <h2 class="minitext-left">Improve business performance and the user experience <br>with the right mix of IoT
+          technology and processes</h2>
+
+        <button class="viewmorebtn left"><a href="CategoryLandingPage.html">view more</a></button>
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="img/slide5.png">
+
+        <h1 class="text-left text-center">Control and manage any <br>device with cloud solutions</h1>
+
+        <h2 class="minitext-left minitext-center">Improve business performance and the user experience<br> with the
+          right mix of IoT technology and processes</h2>
+
+        <button class="viewmorebtn center"><a href="CategoryLandingPage.html">view more</a></button>
+
+      </div>
+
+      <!-- The dots/circles -->
+
+      <div class="alldots">
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+      </div>
+
+    </div>
+
+    <a name="about">
+      <div class="about-section">
         <h1 class="title">About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper. 
-          Faucibus nisl tincidunt eget nullam non nisi est sit. Facilisis magna etiam tempor orci eu lobortis. Gravida arcu ac tortor dignissim convallis aenean et tortor at. 
-          Euismod quis viverra nibh cras pulvinar mattis nunc sed. Dui accumsan sit amet nulla. Suscipit tellus mauris a diam.
-          A diam sollicitudin tempor id. Feugiat vivamus at augue eget arcu. Tincidunt dui ut ornare lectus sit. Non sodales neque sodales ut etiam. Fermentum leo vel orci porta non pulvinar. 
-          Nam aliquam sem et tortor consequat id porta nibh. Fermentum et sollicitudin ac orci phasellus. Enim diam vulputate ut pharetra sit amet aliquam.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Mollis nunc sed id semper.
+          Faucibus nisl tincidunt eget nullam non nisi est sit. Facilisis magna etiam tempor orci eu lobortis. Gravida
+          arcu ac tortor dignissim convallis aenean et tortor at.
+          Euismod quis viverra nibh cras pulvinar mattis nunc sed. Dui accumsan sit amet nulla. Suscipit tellus mauris a
+          diam.
+          A diam sollicitudin tempor id. Feugiat vivamus at augue eget arcu. Tincidunt dui ut ornare lectus sit. Non
+          sodales neque sodales ut etiam. Fermentum leo vel orci porta non pulvinar.
+          Nam aliquam sem et tortor consequat id porta nibh. Fermentum et sollicitudin ac orci phasellus. Enim diam
+          vulputate ut pharetra sit amet aliquam.
         </p>
         <p>
-          Turpis egestas pretium aenean pharetra magna. 
-          Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. 
-          Phasellus vestibulum lorem sed risus ultricies. Mauris rhoncus aenean vel elit scelerisque mauris. 
-          Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. 
-          Tristique sollicitudin nibh sit amet commodo. Et sollicitudin ac orci phasellus egestas. 
+          Turpis egestas pretium aenean pharetra magna.
+          Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+          Phasellus vestibulum lorem sed risus ultricies. Mauris rhoncus aenean vel elit scelerisque mauris.
+          Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam.
+          Tristique sollicitudin nibh sit amet commodo. Et sollicitudin ac orci phasellus egestas.
         </p>
         <img src="img/signature.png">
       </div>
     </a>
 
-      <div class="our-instruments">
-        <h1>Best Seller</h1>
-        <p>
-          Turpis egestas pretium aenean pharetra magna. <br>
-          Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-        </p>
-        <div class="multiple-items">
-          <div>
-            <a href="product.html">
-              <img src="img/tr.jpg">
+    <div class="our-instruments">
+      <h1>Best Seller</h1>
+      <p>
+        Turpis egestas pretium aenean pharetra magna. <br>
+        Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+      </p>
+      <div class="multiple-items">
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
 
-              <div class="text">
-                <p class="description">Fame FVN-02 <br>Violingarnitur</p>
-                <p class="price">$ 158</p>
-              </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
 
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
           </div>
+        </div>
 
-          <div>
-            <a href="product.html">
-              <img src="img/tr1.jpg">
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
 
-              <div class="text">
-                <p class="description">Yamaha YSV-104 <br>RD</p>
-                <p class="price">$ 730</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
           </div>
-
-          <div>
-            <a href="product.html">
-              <img src="img/tr2.jpg">
-
-              <div class="text">
-                <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
-                <p class="price">$ 380</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div>
+          <a href="product.html">
+            <img src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
           </div>
-          <div>
-            <a href="product.html">
-              <img  class="trump"src="img/tr3.jpg">
-              <div class="text">
-                <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
-                <p class="price">$ 46</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div>
+          <a href="product.html">
+            <img src="img/prd5.jpg">
+            <div class="text">
+              <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
+              <p class="price">$ 750</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
           </div>
-          <div>
-            <a href="product.html">
-              <img src="img/tr4.jpg">
-              <div class="text">
-                <p class="description">J & D AG-3 <br>1/2 NT Natural</p>
-                <p class="price">$ 750</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart5"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish5"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div>
+          <a href="product.html">
+            <img src="img/prd6.jpg">
+            <div class="text trumpet">
+              <p class="description">Fame SP-15</p>
+              <p class="price">$ 335</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
           </div>
-          <div>
-            <a href="product.html">
-              <img src="img/tr5.jpg">
-              <div class="text trumpet">
-                <p class="description">Fame SP-15</p>
-                <p class="price">$ 335</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart6"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish6"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div>
+          <a href="product.html">
+            <img src="img/prd7.jpg">
+            <div class="text trumpet">
+              <p class="description">Trumpet VB-21</p>
+              <p class="price">$ 250</p>
             </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
           </div>
-          <div>
-            <a href="product.html">
-              <img class="trump" src="img/tr6.jpg">
-              <div class="text trumpet">
-                <p class="description">Trumpet VB-21</p>
-                <p class="price">$ 250</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart7"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish7"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div>
+          <a href="product.html">
+            <img src="img/prd8.jpg">
+            <div class="text drums">
+              <p class="description">Drums</p>
+              <p class="price">$ 70</p>
             </div>
-          </div>
-          <div>
-            <a href="product.html">
-              <img src="img/tr7.jpg">
-              <div class="text drums">
-                <p class="description">Drums</p>
-                <p class="price">$ 70</p>
-              </div>
-            </a>
-            <div class="buttons">
-              <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
-              <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
-            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart8"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish8"><i class="fa-solid fa-heart"></i></button>
           </div>
         </div>
       </div>
-      <div class="upcoming-artists">
-        <h1>Best Artists</h1>
-        <p>
-          Turpis egestas pretium aenean pharetra magna. <br>
-          Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-        </p>
-        <div class="artists">
-          <div class="row">
-            <p class="numbers">#10</p>
-            <p class="name">Ray Charles</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Ray_Charles">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#9</p>
-            <p class="name">Aretha Franklin</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Aretha_Franklin">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#8</p>
-            <p class="name">Little Richard</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Little_Richard">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#7</p>
-            <p class="name">James Brown</p>
-            <button><a href="https://ro.wikipedia.org/wiki/James_Brown">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#6</p>
-            <p class="name">Jimi Hendrix</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Jimi_Hendrix">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#5</p>
-            <p class="name">Chuck Berry</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Chuck_Berry">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#4</p>
-            <p class="name">The Rolling Stones</p>
-            <button><a href="https://ro.wikipedia.org/wiki/The_Rolling_Stones">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#3</p>
-            <p class="name">Elvis Presley</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Elvis_Presley">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#2</p>
-            <p class="name">Bob Dylan</p>
-            <button><a href="https://ro.wikipedia.org/wiki/Bob_Dylan">Check Out</a></button>
-          </div>
-          <div class="row">
-            <p class="numbers">#1</p>
-            <p class="name">The Beatles</p>
-            <button><a href="https://ro.wikipedia.org/wiki/The_Beatles">Check Out</a></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="image-section">
+    </div>
+    <div class="upcoming-artists">
+      <h1>Best Artists</h1>
+      <p>
+        Turpis egestas pretium aenean pharetra magna. <br>
+        Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+      </p>
+      <div class="artists">
         <div class="row">
-          <iframe width="420" height="315"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-          <div class="text1">
-            <h1>A Huge Live Show Music Box Set.</h1>
-            <p>Turpis egestas pretium aenean pharetra magna. <br>
-              Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-            </p>
-          </div>
+          <p class="numbers">#10</p>
+          <p class="name">Ray Charles</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Ray_Charles">Check Out</a></button>
         </div>
         <div class="row">
-          <div class="text">
-            <h1>Best DJ Sets Now
-                On Your Device
-            </h1>
-            <p>Turpis egestas pretium aenean pharetra magna. <br>
-              Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-            </p>
-            <button><a href="https://www.apple.com/app-store/"><i class="fa-brands fa-apple"></i> App Store</a></button>
-            <button><a href="https://play.google.com/"><i class="fa-brands fa-google-play"></i> Google play</a></button>
-          </div>
-          <img src="img/br.jpg">
+          <p class="numbers">#9</p>
+          <p class="name">Aretha Franklin</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Aretha_Franklin">Check Out</a></button>
         </div>
         <div class="row">
-          <img src="img/spot.jpg">
-          <div class="text2">
-            <h1>Spotify On Stage</h1>
-            <p>Turpis egestas pretium aenean pharetra magna. <br>
-              Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-            </p>
+          <p class="numbers">#8</p>
+          <p class="name">Little Richard</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Little_Richard">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#7</p>
+          <p class="name">James Brown</p>
+          <button><a href="https://ro.wikipedia.org/wiki/James_Brown">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#6</p>
+          <p class="name">Jimi Hendrix</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Jimi_Hendrix">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#5</p>
+          <p class="name">Chuck Berry</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Chuck_Berry">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#4</p>
+          <p class="name">The Rolling Stones</p>
+          <button><a href="https://ro.wikipedia.org/wiki/The_Rolling_Stones">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#3</p>
+          <p class="name">Elvis Presley</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Elvis_Presley">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#2</p>
+          <p class="name">Bob Dylan</p>
+          <button><a href="https://ro.wikipedia.org/wiki/Bob_Dylan">Check Out</a></button>
+        </div>
+        <div class="row">
+          <p class="numbers">#1</p>
+          <p class="name">The Beatles</p>
+          <button><a href="https://ro.wikipedia.org/wiki/The_Beatles">Check Out</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <div class="row">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <div class="text1">
+          <h1>A Huge Live Show Music Box Set.</h1>
+          <p>Turpis egestas pretium aenean pharetra magna. <br>
+            Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text">
+          <h1 id="downloadlink">Best DJ Sets Now
+            On Your Device
+          </h1>
+          <p>Turpis egestas pretium aenean pharetra magna. <br>
+            Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+          </p>
+          <button><a href="https://www.apple.com/app-store/"><i class="fa-brands fa-apple"></i> App Store</a></button>
+          <button><a href="https://play.google.com/"><i class="fa-brands fa-google-play"></i> Google play</a></button>
+        </div>
+        <img src="img/br.jpg">
+      </div>
+      <div class="row">
+        <img src="img/spot.jpg">
+        <div class="text2">
+          <h1>Spotify On Stage</h1>
+          <p>Turpis egestas pretium aenean pharetra magna. <br>
+            Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--------------------------FOOTER---------------------->
+    <div id=footer class="footer">
+      <div class="title">
+        <h1>NesMusic</h1>
+        <p>Instagram @NesMusic</p>
+      </div>
+      <div class="images">
+        <img src="img/img1.png">
+        <img src="img/img2.png">
+        <img src="img/img3.png">
+        <img src="img/img4.png">
+        <img src="img/img5.png">
+      </div>
+      <div class="social-media">
+        <div class="copyright">
+          <p>Copyright &copy;</p>
+          <a href="mailto:gheorghiciucgeorgia@gmail.com">gheorghiciucgeorgia@gmail.com</a>
+          <a href="tel:+1 (888) 548-4344">+1 (888) 548-4344</a>
+        </div>
+
+        <div class="forms">
+
+          <form id="email-input">
+
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Subscribe"
+              id="email" required>
+            <input type="submit" value="Email" id="subscribe">
+            <label for="subscribe" id="forSubscribe">
+
+              <i class="fas fa-chevron-circle-right"></i>
+
+            </label>
+
+          </form>
+
+          <div class="pages">
+            <a href="products.html">Products</a>
+            <a href="index.html#about">About us</a>
+            <a href="index.html#footer">Contact us</a>
           </div>
+
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://twitter.com/?lang=ro"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.spotify.com/us/"><i class="fa-brands fa-spotify"></i></a>
         </div>
       </div>
-      <!--------------------------FOOTER---------------------->
-      <div id=footer class="footer">
-        <div class="title">
-          <h1>NesMusic</h1>
-          <p>Instagram @NesMusic</p>
-        </div>
-        <div class="images">
-          <img src="img/img1.png">
-          <img src="img/img2.png">
-          <img src="img/img3.png">
-          <img src="img/img4.png">
-          <img src="img/img5.png">
-        </div>
-        <div class="social-media">
-            <div class="copyright">
-              <p>Copyright &copy;</p>
-              <a href="mailto:gheorghiciucgeorgia@gmail.com">gheorghiciucgeorgia@gmail.com</a>
-              <a href="tel:+1 (888) 548-4344">+1 (888) 548-4344</a>
-            </div>
+    </div>
 
-            <div class="forms">
+  </div>
 
-              <form id="email-input">
-
-                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Subscribe" id="email" required>
-                <input type="submit" value="Email" id="subscribe">
-                <label for="subscribe" id="forSubscribe">
-        
-                    <i class="fas fa-chevron-circle-right"></i>
-        
-                </label>
-        
-            </form>
-
-            <div class="pages">
-              <a href="products.html">Products</a>
-              <a href="index.html#about">About us</a>
-              <a href="index.html#footer">Contact us</a>
-            </div>
-
-            </div>
-              <div class="social-icons">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://twitter.com/?lang=ro"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.spotify.com/us/"><i class="fa-brands fa-spotify"></i></a>
-              </div>
-        </div>
-      </div>
-
-</div>
-
-<!--Jquery pentru functia de linku-ri -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/login.js"></script>
+  <!--Jquery pentru functia de linku-ri -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/782bc99ca2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/cart-script.js"></script>
 </body>
+
 </html>

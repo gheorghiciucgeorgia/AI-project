@@ -548,7 +548,7 @@ span.psw {
   text-align: center;
   margin: 0px -8px;
   margin-bottom: 2%;
-  padding-bottom: 4%;
+  padding-bottom:2%;
 
   a {
     text-decoration: none;
@@ -578,8 +578,6 @@ span.psw {
   .slick-slide {
     img {
       display: inline;
-      border: 2px solid white;
-      border-bottom: 99px solid white;
       position: relative;
     }
 
@@ -590,7 +588,7 @@ span.psw {
 
     .text {
       position: absolute;
-      bottom: 41px;
+      bottom: 64px;
       margin-left: 1.9%;
 
       p {
@@ -608,7 +606,7 @@ span.psw {
 
     .buttons {
       position: absolute;
-      bottom: 7px;
+      bottom: 12px;
       margin-left: 1.4%;
 
       button {

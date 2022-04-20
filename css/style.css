@@ -478,7 +478,7 @@ span.psw a {
   text-align: center;
   margin: 0px -8px;
   margin-bottom: 2%;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
 }
 .our-instruments a {
   text-decoration: none;
@@ -503,8 +503,6 @@ span.psw a {
 }
 .our-instruments .slick-slide img {
   display: inline;
-  border: 2px solid white;
-  border-bottom: 99px solid white;
   position: relative;
 }
 .our-instruments .slick-slide .trump {
@@ -513,7 +511,7 @@ span.psw a {
 }
 .our-instruments .slick-slide .text {
   position: absolute;
-  bottom: 41px;
+  bottom: 64px;
   margin-left: 1.9%;
 }
 .our-instruments .slick-slide .text p {
@@ -527,7 +525,7 @@ span.psw a {
 }
 .our-instruments .slick-slide .buttons {
   position: absolute;
-  bottom: 7px;
+  bottom: 12px;
   margin-left: 1.4%;
 }
 .our-instruments .slick-slide .buttons button {

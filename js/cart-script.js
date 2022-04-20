@@ -39,72 +39,53 @@ onLoadWishNumbers();
 let carts=document.querySelectorAll('.add-cart');
 let products=[
   {
-     name:"Kristina Dam Oak Table With White Marble Top",
+     name:"Fame FVN-02 Violingarnitur",
      tag:"prd1",
-     price:799.55,
+     price:158,
      inCart:0
   },
   {
-    name:"Hay - About A Lounge Chair AAL 93",
+    name:"Yamaha YSV-104 RD",
     tag:"prd2",
-    price:659.55,
+    price:730,
     inCart:0
  },
   {
-     name:"Activate Facial Mask and Charcoal Sopa",
+     name:"Sennheiser XSW-D PEDALBOARD SET",
      tag:"prd3",
-     price:129.55,
+     price:380,
      inCart:0
   },
   {
-     name:"Cocktail Table Walnut | YES",
+     name:"J & D AG-1 1/2 NT Natural",
      tag:"prd4",
-     price:299.99,
+     price:46,
      inCart:0
   },
   {
-     name:"Hay - About A Lounge Chair AAL 93",
+     name:"J & D AG-3 1/2 NT Natural",
      tag:"prd5",
-     price:659.55,
+     price:750,
      inCart:0
   },
   {
-     name:"TORY DESK CALENDAR",
+     name:"Fame SP-15",
      tag:"prd6",
-     price:410.99,
+     price:335,
      inCart:0
   },
   {
-     name:"CH445 Wing Chair on  SUITE NY",
+     name:"Trumpet VB-21",
      tag:"prd7",
-     price:330.55,
+     price:250,
      inCart:0
   },
   {
-    name:"Kristina Dam Oak Table With White Marble Top",
-    tag:"prd1",
-    price:799.55,
-    inCart:0
- },
- {
-   name:"Hay - About A Lounge Chair AAL 93",
-   tag:"prd2",
-   price:659.55,
-   inCart:0
-},
- {
-    name:"Activate Facial Mask and Charcoal Sopa",
-    tag:"prd3",
-    price:129.55,
-    inCart:0
- },
- {
-    name:"Cocktail Table Walnut | YES",
-    tag:"prd4",
-    price:299.99,
+    name:"Drums",
+    tag:"prd8",
+    price:70,
     inCart:0
  }
-
 ];
 for(let i=0; i< carts.length; i++) {
   carts[i].addEventListener('click', () => {
@@ -215,7 +196,7 @@ function displayCart() {
         <div class="product-row">
 
           <div class="product">
-            <img src="img/${item.tag}.png">
+            <img src="img/${item.tag}.jpg">
             <div class="product-name">
               <span class="product-tag">${item.tag}</span>
               <span>${item.name}</span>
