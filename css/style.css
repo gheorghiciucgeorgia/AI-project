@@ -807,27 +807,27 @@ span.psw a {
   padding-right: 20%;
   outline: none;
 }
-.productpagecontent .products {
+.productpagecontent .products-page-content {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
-.productpagecontent .products .products-title {
+.productpagecontent .products-page-content .products-title {
   text-align: center;
 }
-.productpagecontent .products .row {
+.productpagecontent .products-page-content .row {
   display: flex;
 }
-.productpagecontent .products .row div {
+.productpagecontent .products-page-content .row div {
   position: relative;
   text-align: center;
   width: 70%;
   margin: 1% 2% 1% -1%;
 }
-.productpagecontent .products .row div img {
+.productpagecontent .products-page-content .row div img {
   width: 85%;
 }
-.productpagecontent .products .row div .text {
+.productpagecontent .products-page-content .row div .text {
   position: absolute;
   bottom: 18%;
   left: 14%;
@@ -835,37 +835,37 @@ span.psw a {
   font-size: 11pt;
   font-weight: 400;
 }
-.productpagecontent .products .row div .text .price {
+.productpagecontent .products-page-content .row div .text .price {
   position: absolute;
   bottom: -43%;
   left: 38%;
   color: black;
   font-size: 11pt;
 }
-.productpagecontent .products .row div .buttons {
+.productpagecontent .products-page-content .row div .buttons {
   position: absolute;
   bottom: 5%;
   left: 12%;
 }
-.productpagecontent .products .row div .buttons button {
+.productpagecontent .products-page-content .row div .buttons button {
   border: none;
   background-color: transparent;
   font-size: 12pt;
 }
-.productpagecontent .products .row div .buttons .Plus-button:hover {
+.productpagecontent .products-page-content .row div .buttons .Plus-button:hover {
   cursor: pointer;
   color: #84bc22;
 }
-.productpagecontent .products .row div .buttons .Heart-button:hover {
+.productpagecontent .products-page-content .row div .buttons .Heart-button:hover {
   cursor: pointer;
   color: red;
 }
-.productpagecontent .products .loadbtn-section {
+.productpagecontent .products-page-content .loadbtn-section {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
 }
-.productpagecontent .products .loadbtn-section button {
+.productpagecontent .products-page-content .loadbtn-section button {
   border: 2px solid #203239;
   border-radius: 25px;
   background-color: #203239;
@@ -876,11 +876,11 @@ span.psw a {
   cursor: pointer;
   font-family: inherit;
 }
-.productpagecontent .products .loadbtn-section button:hover {
+.productpagecontent .products-page-content .loadbtn-section button:hover {
   background-color: transparent;
   color: #203239;
 }
-.productpagecontent .products .box-hidden {
+.productpagecontent .products-page-content .box-hidden {
   display: none;
 }
 
