@@ -1512,3 +1512,88 @@ span.psw {
       }
   }
 }
+/*-------------------------------------Contact me form------------------------*/
+.main-page{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form{
+    margin-top:10%;
+    margin-bottom:10%;
+    line-height: 1.2;
+    text-align:center;
+    color:white;
+    font-family:inherit;
+    display: inline-block;
+    width: 100%;
+    .contact-title{
+      color:black;
+      font-family:inherit;
+       font-size: 20pt;
+    }
+  }
+}
+.form-control{
+  margin-bottom:10px;
+  width:45%;
+}
+input[type="text"]
+{
+  border-radius: 10px;
+  border-color:black;
+  border-width: 3px;
+  border-style:solid;
+  padding:10px;
+  width:45%;
+  outline:none;
+  padding-left:10px;
+  background-color: black;
+  opacity:0.5;
+  display: inline;
+  color:white;
+}
+input[type="email"]{
+  border-radius: 10px;
+  border-color:black;
+  border-width: 3px;
+  border-style:solid;
+  padding:10px;
+  width:45%;
+  outline:none;
+  padding-left:10px;
+  background-color: black;
+  opacity:0.5;
+  display: inline;
+  color:white;
+}
+textarea{
+  border-radius: 10px;
+  border-color:black;
+  border-width: 3px;
+  border-style:solid;
+  padding:10px;
+  width:64%;
+  outline:none;
+  padding-left:10px;
+  background-color: black;
+  opacity:0.5;
+  display: inline;
+  color:white;
+  padding-bottom: 80px;
+}
+input[type="submit"]{
+  background-color: $third-color;
+  color:white;
+  border:20px;
+  border-radius: 25px;
+  padding:18px;
+  display: inline-block;
+  margin-top:20px;
+  outline: none;
+  width:15%;
+}
+input[type="submit"]:hover{
+  box-shadow: 0 0 10px $third-color,0 0 40px $third-color,0 0 80px $third-color;
+  color:$white;
+}
