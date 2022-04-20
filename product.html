@@ -31,9 +31,9 @@
     </div>
     <div class="icons">
       <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-      <a href="#"><i class="fa-solid fa-heart"></i></a>
-      <a href="#"><i class="fa-solid fa-user"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i><span class="ellipse">0</span></a>
+      <a href="#"><i class="fa-solid fa-heart"></i><span class="ellipse">0</span></a>
+      <a href="#" id="user-icon"><i class="fa-solid fa-user"></i></a>
     </div>
   </div>
   <div class="productcontent">
@@ -117,8 +117,116 @@
         </div>
       </div>
       <div class="content-right">
+            
+        <h1 class="price">$ 299.99</h1>
+        <button class="product-color"><i class="fas fa-circle"></i> Dark Grey <i class="fas fa-caret-down"></i> </button>
+        
+        <div class="add-to-cart-and-quantity">
 
+          <div id="field1">
+            <button class="decrease-PDP">-</button>
+            <input type="number" class="quantity-PDP">
+            <button class="increase-PDP">+</button>
+          </div>
+
+        <button class="add-to-cart cart12">
+          add to cart
+        </button>
+        </div>
+
+        <p class="product-detail">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. 
+          Nemo enim ipsam voluptatem quia voluptas<span id="dots">...</span>
+          <span id="more">
+            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+            sed quia non numquam eius modi tempora 
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </span>
+        </p>
+
+          <button  id="myBtn">Read more</button>
+          <button id="print">Print Page</button>
+
+        <div class="share">
+
+          <p>Share</p>
+          <a href="https://www.facebook.com/OSFDigital/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
+          <a href="https://twitter.com/osfdigital?lang=en"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.pinterest.ca/osfglobal/_saved/"><i class="fab fa-pinterest-p"></i></a>
+
+        </div>
+        </div>
+
+    </div>
+    <div class="other-products">
+      <div class="title">
+        <p>Check out other products</p>
       </div>
+      <div class="row">
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd1.jpg">
+
+            <div class="text">
+              <p class="description">Fame FVN-02 <br>Violingarnitur</p>
+              <p class="price">$ 158</p>
+            </div>
+
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart1"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish1"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd2.jpg">
+
+            <div class="text">
+              <p class="description">Yamaha YSV-104 <br>RD</p>
+              <p class="price">$ 730</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart2"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish2"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img src="img/prd3.jpg">
+
+            <div class="text">
+              <p class="description">Sennheiser XSW-D <br>PEDALBOARD SET</p>
+              <p class="price">$ 380</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart3"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish3"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <div>
+          <a href="product.html">
+            <img class="trump" src="img/prd4.jpg">
+            <div class="text">
+              <p class="description">J & D AG-1 <br>1/2 NT Natural</p>
+              <p class="price">$ 46</p>
+            </div>
+          </a>
+          <div class="buttons">
+            <button class="Plus-button add-cart cart4"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Heart-button add-wish wish4"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!--------------------------FOOTER---------------------->
     <div id=footer class="footer">
