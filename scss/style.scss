@@ -171,7 +171,7 @@ body {
   /* Enable scroll if needed */
   background-color: $black;
   z-index: 13;
-}
+
 
 /* Modal Content/Box */
 
@@ -332,6 +332,7 @@ span.psw {
   to {
     transform: scale(1)
   }
+}
 }
 
 .page-content {
