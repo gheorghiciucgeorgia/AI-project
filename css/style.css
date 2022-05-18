@@ -123,161 +123,6 @@ body {
   font-weight: 700;
 }
 
-/*--------------Modal form Log In----------*/
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  z-index: 13;
-  /* Modal Content/Box */
-  /* Center the image and position the close button */
-  /* The Close Button (x) */
-  /* The fields of the email and lato */
-  /* the styling of the forgot password */
-  /* Set a style for all buttons */
-  /* Add Zoom Animation */
-}
-.modal .modal-content {
-  background-color: white;
-  margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
-  width: 30%;
-  /* Could be more or less, depending on screen size */
-  border-radius: 6px;
-  padding: 10px 0px;
-}
-.modal .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-.modal .imgcontainer h1 {
-  color: grey;
-  font-weight: 900;
-  font-size: 40px;
-}
-.modal .close {
-  position: absolute;
-  right: 25px;
-  top: -80%;
-  font-size: 35px;
-  font-weight: bold;
-}
-.modal .close:hover,
-.modal .close:focus {
-  opacity: 0.5;
-  cursor: pointer;
-}
-.modal .container {
-  padding: 60px;
-}
-.modal input[type=email],
-.modal input[type=password],
-.modal input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid black;
-  box-sizing: border-box;
-  border-radius: 25px;
-  outline: none;
-  font-weight: 400;
-  margin-bottom: 40px;
-  background-color: transparent;
-  z-index: 1;
-}
-.modal #password {
-  position: relative;
-}
-.modal span.psw {
-  float: right;
-}
-.modal span.psw a {
-  text-decoration: none;
-  color: #84bc22;
-  font-weight: 700;
-}
-.modal .input-container {
-  position: relative;
-}
-.modal .input-container .fa-eye {
-  float: right;
-  opacity: 0.7;
-  font-size: 20px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 2;
-  cursor: pointer;
-}
-.modal .loginbtn {
-  background-color: #84bc22;
-  color: white;
-  padding: 14px 100px;
-  margin: 8px 0;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #84bc22;
-  cursor: pointer;
-  border-radius: 25px;
-  text-transform: uppercase;
-  font-size: 18px;
-  text-align: center;
-  /*we put the button in the center of the modal container */
-  display: grid;
-  margin: auto;
-}
-.modal .loginbtn:hover {
-  opacity: 0.8;
-}
-.modal .idonthave {
-  text-align: center;
-  display: grid;
-  margin: auto;
-  font-size: 20px;
-  line-height: 3.583;
-  color: #84bc22;
-}
-.modal .idonthave a {
-  text-decoration: none;
-  color: #84bc22;
-}
-.modal .idonthave a:hover {
-  opacity: 0.7;
-}
-.modal .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s;
-}
-@-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-@keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 .page-content {
   width: 100%;
   display: flex;
@@ -513,7 +358,7 @@ body {
 .our-instruments .slick-slide .buttons {
   position: absolute;
   bottom: 12px;
-  margin-left: 1.4%;
+  margin-left: 2%;
 }
 .our-instruments .slick-slide .buttons button {
   border: none;
@@ -524,9 +369,6 @@ body {
 }
 .our-instruments .slick-slide .buttons .Plus-button:hover {
   color: #84bc22;
-}
-.our-instruments .slick-slide .buttons .Heart-button:hover {
-  color: red;
 }
 
 .upcoming-artists {
@@ -721,7 +563,7 @@ body {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-  right: 2rem;
+  right: -1rem;
   color: #E0DDAA;
   width: 5%;
   height: 38%;
@@ -1342,6 +1184,28 @@ body {
   font-size: 40px;
   width: 20%;
   font-weight: 900;
+}
+
+/*--------------HEART PAGE------------*/
+.heart-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heart-page .products-box {
+  background-color: white;
+  padding: 4%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4%;
+  margin-top: 10%;
+}
+.heart-page .products-box .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25pt;
+  margin-top: -50px;
 }
 
 /*-------------------------------------Contact me form------------------------*/

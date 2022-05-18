@@ -1,4 +1,4 @@
-// wish increasing number when clicked
+/*// wish increasing number when clicked
 
 let wish=document.querySelectorAll(".add-wish");
 
@@ -33,7 +33,7 @@ function wishNumbers(){
     document.querySelector('.heart span').textContent=1;
   }
 }
-onLoadWishNumbers();
+onLoadWishNumbers();*/
 
 //--------------cart script------
 let carts=document.querySelectorAll('.add-cart');
