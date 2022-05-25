@@ -685,10 +685,6 @@ body {
   cursor: pointer;
   color: #84bc22;
 }
-.productpagecontent .products-page-content .row div .buttons .Heart-button:hover {
-  cursor: pointer;
-  color: red;
-}
 .productpagecontent .products-page-content .loadbtn-section {
   display: flex;
   justify-content: center;
@@ -903,6 +899,7 @@ body {
   text-transform: uppercase;
   padding: 2% 4%;
   color: white;
+  cursor: pointer;
 }
 .productcontent .productbox .content-right .product-detail {
   padding: 4% 0%;
